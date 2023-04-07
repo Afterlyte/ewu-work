@@ -1,0 +1,1217 @@
+[
+Johnson, Calvin, Wide Reciever, DET - Detroit Lions,
+
+Welker, Wes, Wide Reciever, NWE - New England Patriots,
+
+Cruz, Victor, Wide Reciever, NYG - New York Giants,
+
+Fitzgerald, Larry, Wide Reciever, ARI - Arizona Cardinals,
+
+Smith, Steve, Wide Reciever, CAR - Carolina Panthers,
+
+White, Roddy, Wide Reciever, ATL - Atlanta Falcons,
+
+Nelson, Jordy, Wide Reciever, GNB - Green Bay Packers,
+
+Marshall, Brandon, Wide Reciever, MIA - Miami Dolphins,
+
+Wallace, Mike, Wide Reciever, PIT - Pittsburgh Steelers,
+
+Nicks, Hakeem, Wide Reciever, NYG - New York Giants,
+
+Bowe, Dwayne, Wide Reciever, KAN - Kansas City Chiefs,
+
+Colston, Marques, Wide Reciever, NOR - New Orleans Saints,
+
+Brown, Antonio, Wide Reciever, PIT - Pittsburgh Steelers,
+
+Jackson, Vincent, Wide Reciever, SDG - Los Angeles Chargers,
+
+Green, A.J., Wide Reciever, CIN - Cincinnati Bengals,
+
+Washington, Nate, Wide Reciever, TEN - Tennessee Titans,
+
+Johnson, Stevie, Wide Reciever, BUF - Buffalo Bills,
+
+Heyward-Bey, Darrius, Wide Reciever, OAK - Oakland Raiders,
+
+Harvin, Percy, Wide Reciever, MIN - Minnesota Vikings,
+
+Lloyd, Brandon, Wide Reciever, DEN - Denver Broncos,
+
+Jackson, DeSean, Wide Reciever, PHI - Philadelphia Eagles,
+
+Wayne, Reggie, Wide Reciever, IND - Indianapolis Colts,
+
+Jones, Julio, Wide Reciever, ATL - Atlanta Falcons,
+
+Jennings, Greg, Wide Reciever, GNB - Green Bay Packers,
+
+Garcon, Pierre, Wide Reciever, IND - Indianapolis Colts,
+
+Gaffney, Jabar, Wide Reciever, WAS - Washington Redskins,
+
+Bryant, Dez, Wide Reciever, DAL - Dallas Cowboys,
+
+Boldin, Anquan, Wide Reciever, BAL - Baltimore Ravens,,
+
+Crabtree, Michael, Wide Reciever, SFO - San Francisco 49ers,
+
+Maclin, Jeremy, Wide Reciever, PHI - Philadelphia Eagles,
+
+Robinson, Laurent, Wide Reciever, DAL - Dallas Cowboys,
+
+Floyd, Malcom, Wide Reciever, SDG - Los Angeles Chargers,
+
+Smith, Torrey, Wide Reciever, BAL - Baltimore Ravens,,
+
+Baldwin, Doug, Wide Reciever, SEA - Seattle Seahawks,
+
+Breaston, Steve, Wide Reciever, KAN - Kansas City Chiefs,
+
+Williams, Mike, Wide Reciever, TAM - Tampa Bay Buccaneers,
+
+Burleson, Nate, Wide Reciever, DET - Detroit Lions,
+
+Knox, Johnny, Wide Reciever, CHI - Chicago Bears,
+
+Simpson, Jerome, Wide Reciever, CIN - Cincinnati Bengals,
+
+Little, Greg, Wide Reciever, CLE - Cleveland Browns,
+
+Branch, Deion, Wide Reciever, NWE - New England Patriots,
+
+Doucet, Early, Wide Reciever, ARI - Arizona Cardinals,
+
+Avant, Jason, Wide Reciever, PHI - Philadelphia Eagles,
+
+Nelson, David, Wide Reciever, BUF - Buffalo Bills,
+
+Holmes, Santonio, Wide Reciever, NYJ - New York Jets,
+
+Jones, James, Wide Reciever, GNB - Green Bay Packers,
+
+Moore, Lance, Wide Reciever, NOR - New Orleans Saints,
+
+Meachem, Robert, Wide Reciever, NOR - New Orleans Saints,
+
+Moore, Denarius, Wide Reciever, OAK - Oakland Raiders,
+
+LaFell, Brandon, Wide Reciever, CAR - Carolina Panthers,
+
+Decker, Eric, Wide Reciever, DEN - Denver Broncos,
+
+Burress, Plaxico, Wide Reciever, NYJ - New York Jets,
+
+Young, Titus, Wide Reciever, DET - Detroit Lions,
+
+Williams, Damian, Wide Reciever, TEN - Tennessee Titans,
+
+Roberts, Andre, Wide Reciever, ARI - Arizona Cardinals,
+
+Moss, Santana, Wide Reciever, WAS - Washington Redskins,
+
+Austin, Miles, Wide Reciever, DAL - Dallas Cowboys,
+
+Parker, Preston, Wide Reciever, TAM - Tampa Bay Buccaneers,
+
+Thomas, Demaryius, Wide Reciever, DEN - Denver Broncos,
+
+Hartline, Brian, Wide Reciever, MIA - Miami Dolphins,
+
+Bess, Davone, Wide Reciever, MIA - Miami Dolphins,
+
+Manningham, Mario, Wide Reciever, NYG - New York Giants,
+
+Cribbs, Joshua, Wide Reciever, CLE - Cleveland Browns,
+
+Collie, Austin, Wide Reciever, IND - Indianapolis Colts,
+
+Jones, Jacoby, Wide Reciever, HOU - Houston Texans,
+
+Williams, Roy, Wide Reciever, CHI - Chicago Bears,
+
+Henderson, Devery, Wide Reciever, NOR - New Orleans Saints,
+
+Douglas, Harry, Wide Reciever, ATL - Atlanta Falcons,
+
+Johnson, Andre, Wide Reciever, HOU - Houston Texans,
+
+Rice, Sidney, Wide Reciever, SEA - Seattle Seahawks,
+
+Walter, Kevin, Wide Reciever, HOU - Houston Texans,
+
+Hawkins, Lavelle, Wide Reciever, TEN - Tennessee Titans,
+
+Aromashodu, Devin, Wide Reciever, MIN - Minnesota Vikings,
+
+Naanee, Legedu, Wide Reciever, CAR - Carolina Panthers,
+
+Jenkins, Michael, Wide Reciever, MIN - Minnesota Vikings,
+
+Driver, Donald, Wide Reciever, GNB - Green Bay Packers,
+
+Benn, Arrelious, Wide Reciever, TAM - Tampa Bay Buccaneers,
+
+Obomanu, Ben, Wide Reciever, SEA - Seattle Seahawks,
+
+Alexander, Danario, Wide Reciever, STL - L.A. Rams,
+
+Gibson, Brandon, Wide Reciever, STL - L.A. Rams,
+
+Thomas, Mike, Wide Reciever, JAC - Jacksonville Jaguars,
+
+Briscoe, Dezmon, Wide Reciever, TAM - Tampa Bay Buccaneers,
+
+Massaquoi, Mohamed, Wide Reciever, CLE - Cleveland Browns,
+
+Tate, Golden, Wide Reciever, SEA - Seattle Seahawks,
+
+Bennett, Earl, Wide Reciever, CHI - Chicago Bears,
+
+Ward, Hines, Wide Reciever, PIT - Pittsburgh Steelers,
+
+Cobb, Randall, Wide Reciever, GNB - Green Bay Packers,
+
+Hester, Devin, Wide Reciever, CHI - Chicago Bears,
+
+Hill, Jason, Wide Reciever, JAC - Jacksonville Jaguars,
+
+Brown, Vincent, Wide Reciever, SDG - Los Angeles Chargers,
+
+Caldwell, Andre, Wide Reciever, CIN - Cincinnati Bengals,
+
+Cooper, Riley, Wide Reciever, PHI - Philadelphia Eagles,
+
+Kerley, Jeremy, Wide Reciever, NYJ - New York Jets,
+
+Stallworth, Donte', Wide Reciever, WAS - Washington Redskins,
+
+Dillard, Jarett, Wide Reciever, JAC - Jacksonville Jaguars,
+
+Britt, Kenny, Wide Reciever, TEN - Tennessee Titans,
+
+Sanders, Emmanuel, Wide Reciever, PIT - Pittsburgh Steelers,
+
+Ford, Jacoby, Wide Reciever, OAK - Oakland Raiders,
+
+Johnson, Chad, Wide Reciever, NWE - New England Patriots,
+
+Sanzenbacher, Dane, Wide Reciever, CHI - Chicago Bears,
+
+Schilens, Chaz, Wide Reciever, OAK - Oakland Raiders,
+
+Norwood, Jordan, Wide Reciever, CLE - Cleveland Browns,
+
+Willis, Matthew, Wide Reciever, DEN - Denver Broncos,
+
+Salas, Greg, Wide Reciever, STL - L.A. Rams,
+
+Hawkins, Andrew, Wide Reciever, CIN - Cincinnati Bengals,
+
+Roosevelt, Naaman, Wide Reciever, BUF - Buffalo Bills,
+
+Pettis, Austin, Wide Reciever, STL - L.A. Rams,
+
+Baldwin, Jon, Wide Reciever, KAN - Kansas City Chiefs,
+
+Hagan, Derek, Wide Reciever, BUF - Buffalo Bills,
+
+Crayton, Patrick, Wide Reciever, SDG - Los Angeles Chargers,
+
+Murphy, Louis, Wide Reciever, OAK - Oakland Raiders,
+
+Williams, Kyle, Wide Reciever, SFO - San Francisco 49ers,
+
+Smith, Brad, Wide Reciever, BUF - Buffalo Bills,
+
+Cotchery, Jerricho, Wide Reciever, PIT - Pittsburgh Steelers,
+
+Williams, Mike, Wide Reciever, SEA - Seattle Seahawks,
+
+Jones, Donald, Wide Reciever, BUF - Buffalo Bills,
+
+Ginn, Ted, Wide Reciever, SFO - San Francisco 49ers,
+
+Morgan, Josh, Wide Reciever, SFO - San Francisco 49ers,
+
+Edwards, Braylon, Wide Reciever, SFO - San Francisco 49ers,
+
+Mason, Derrick, Wide Reciever, NYJ - New York Jets,
+
+Holley, Jesse, Wide Reciever, DAL - Dallas Cowboys,
+
+Ogletree, Kevin, Wide Reciever, DAL - Dallas Cowboys,
+
+Hankerson, Leonard, Wide Reciever, WAS - Washington Redskins,
+
+West, Chastin, Wide Reciever, JAC - Jacksonville Jaguars,
+
+Royal, Eddie, Wide Reciever, DEN - Denver Broncos,
+
+Sims-Walker, Mike, Wide Reciever, STL - L.A. Rams,
+
+Houshmandzadeh, T.J., Wide Reciever, OAK - Oakland Raiders,
+
+Austin, Terrence, Wide Reciever, WAS - Washington Redskins,
+
+Smith, Steve, Wide Reciever, PHI - Philadelphia Eagles,
+
+Camarillo, Greg, Wide Reciever, MIN - Minnesota Vikings,
+
+Copper, Terrance, Wide Reciever, KAN - Kansas City Chiefs,
+
+Hurd, Sam, Wide Reciever, CHI - Chicago Bears,
+
+Lockette, Ricardo, Wide Reciever, SEA - Seattle Seahawks,
+
+Armstrong, Anthony, Wide Reciever, WAS - Washington Redskins,
+
+Turner, Patrick, Wide Reciever, NYJ - New York Jets,
+
+Barden, Ramses, Wide Reciever, NYG - New York Giants,
+
+Berrian, Bernard, Wide Reciever, MIN - Minnesota Vikings,
+
+Weems, Eric, Wide Reciever, ATL - Atlanta Falcons,
+
+Johnson, Bryant, Wide Reciever, HOU - Houston Texans,
+
+Colbert, Keary, Wide Reciever, KAN - Kansas City Chiefs,
+
+Martin, Ruvell, Wide Reciever, BUF - Buffalo Bills,
+
+Anderson, David, Wide Reciever, WAS - Washington Redskins,
+
+Evans, Lee, Wide Reciever, BAL - Baltimore Ravens,,
+
+Davis, Rashied, Wide Reciever, DET - Detroit Lions,
+
+Stroughter, Sammie, Wide Reciever, TAM - Tampa Bay Buccaneers,
+
+Butler, Deon, Wide Reciever, SEA - Seattle Seahawks,
+
+Hixon, Domenik, Wide Reciever, NYG - New York Giants,
+
+Williams, LaQuan, Wide Reciever, BAL - Baltimore Ravens,,
+
+Slater, Matthew, Wide Reciever, NWE - New England Patriots,
+
+Avery, Donnie, Wide Reciever, TEN - Tennessee Titans,
+
+Amendola, Danny, Wide Reciever, STL - L.A. Rams,
+
+Osgood, Kassim, Wide Reciever, JAC - Jacksonville Jaguars,
+
+Stuckey, Chansi, Wide Reciever, ARI - Arizona Cardinals,
+
+Price, Taylor, Wide Reciever, NWE - New England Patriots,
+
+Burton, Stephen, Wide Reciever, MIN - Minnesota Vikings,
+
+Thomas, Devin, Wide Reciever, NYG - New York Giants,
+
+Sampson, DeMarco, Wide Reciever, ARI - Arizona Cardinals,
+
+Urban, Jerheme, Wide Reciever, KAN - Kansas City Chiefs,
+
+Edelman, Julian, Wide Reciever, NWE - New England Patriots,
+
+Arrington, Adrian, Wide Reciever, NOR - New Orleans Saints,
+
+Mitchell, Carlton, Wide Reciever, CLE - Cleveland Browns,
+
+Underwood, Tiquan, Wide Reciever, NWE - New England Patriots,
+
+Durham, Kris, Wide Reciever, SEA - Seattle Seahawks,
+
+Shorts, Cecil, Wide Reciever, JAC - Jacksonville Jaguars,
+
+Walters, Bryan, Wide Reciever, SDG - Los Angeles Chargers,
+
+Whalen, Ryan, Wide Reciever, CIN - Cincinnati Bengals,
+
+Clayton, Mark, Wide Reciever, STL - L.A. Rams,
+
+Robiskie, Brian, Wide Reciever, CLE - Cleveland Browns,
+
+Mariani, Marc, Wide Reciever, TEN - Tennessee Titans,
+
+Hall, Chad, Wide Reciever, PHI - Philadelphia Eagles,
+
+Gates, Clyde, Wide Reciever, MIA - Miami Dolphins,
+
+Parrish, Roscoe, Wide Reciever, BUF - Buffalo Bills,
+
+Swain, Brett, Wide Reciever, SFO - San Francisco 49ers,
+
+Shipley, Jordan, Wide Reciever, CIN - Cincinnati Bengals,
+
+Spurlock, Micheal, Wide Reciever, TAM - Tampa Bay Buccaneers,
+
+Arceneaux, Emmanuel, Wide Reciever, MIN - Minnesota Vikings,
+
+Banks, Brandon, Wide Reciever, WAS - Washington Redskins,
+
+Stovall, Maurice, Wide Reciever, DET - Detroit Lions,
+
+Miller, Nick, Wide Reciever, OAK - Oakland Raiders,
+
+Stokley, Brandon, Wide Reciever, NYG - New York Giants,
+
+Ajirotutu, Seyi, Wide Reciever, CAR - Carolina Panthers,
+
+Goodman, Richard, Wide Reciever, SDG - Los Angeles Chargers,
+
+Meier, Kerry, Wide Reciever, ATL - Atlanta Falcons,
+
+Reed, David, Wide Reciever, BAL - Baltimore Ravens,,
+
+Edwards, Armanti, Wide Reciever, CAR - Carolina Panthers,
+
+Maehl, Jeff, Wide Reciever, HOU - Houston Texans,
+
+Clayton, Michael, Wide Reciever, NYG - New York Giants,
+
+Hastings, Joe, Wide Reciever, SFO - San Francisco 49ers,
+
+Newsome, Jamar, Wide Reciever, JAC - Jacksonville Jaguars,
+
+Gonzalez, Anthony, Wide Reciever, IND - Indianapolis Colts,
+
+Cosby, Quan, Wide Reciever, DEN - Denver Broncos,
+
+Johnson, Jaymar, Wide Reciever, ARI - Arizona Cardinals,
+
+Doss, Tandon, Wide Reciever, BAL - Baltimore Ravens,,
+
+Williams, Stephen, Wide Reciever, ARI - Arizona Cardinals,
+
+Roby, Courtney, Wide Reciever, NOR - New Orleans Saints,
+
+Battle, Arnaz, Wide Reciever, PIT - Pittsburgh Steelers,
+
+Wallace, Roberto, Wide Reciever, MIA - Miami Dolphins,
+
+Komar, Max, Wide Reciever, CHI - Chicago Bears,
+
+Tate, Brandon, Wide Reciever, CIN - Cincinnati Bengals,
+
+Moore, Marlon, Wide Reciever, MIA - Miami Dolphins,
+
+White, Blair, Wide Reciever, IND - Indianapolis Colts,
+
+Jernigan, Jerrel, Wide Reciever, NYG - New York Giants,
+
+Horne, Jeremy, Wide Reciever, KAN - Kansas City Chiefs,
+
+Harris, Dwayne, Wide Reciever, DAL - Dallas Cowboys,
+
+Holliday, Trindon, Wide Reciever, HOU - Houston Texans,
+
+Pilares, Kealoha, Wide Reciever, CAR - Carolina Panthers,
+
+Flynn, Matt, Quarterback, GNB - Green Bay Packers,
+
+Rodgers, Aaron, Quarterback, GNB - Green Bay Packers,
+
+Taylor, Tyrod, Quarterback, BAL - Baltimore Ravens,,
+
+Hoyer, Brian, Quarterback, NWE - New England Patriots,
+
+Brees, Drew, Quarterback, NOR - New Orleans Saints,
+
+Leinart, Matt, Quarterback, HOU - Houston Texans,
+
+Brady, Tom, Quarterback, NWE - New England Patriots,
+
+Hill, Shaun, Quarterback, DET - Detroit Lions,
+
+Romo, Tony, Quarterback, DAL - Dallas Cowboys,
+
+Locker, Jake, Quarterback, TEN - Tennessee Titans,
+
+Delhomme, Jake, Quarterback, HOU - Houston Texans,
+
+Stafford, Matthew, Quarterback, DET - Detroit Lions,
+
+Schaub, Matt, Quarterback, HOU - Houston Texans,
+
+Manning, Eli, Quarterback, NYG - New York Giants,
+
+Ryan, Matt, Quarterback, ATL - Atlanta Falcons,
+
+Daniel, Chase, Quarterback, NOR - New Orleans Saints,
+
+Smith, Alex, Quarterback, SFO - San Francisco 49ers,
+
+Roethlisberger, Ben, Quarterback, PIT - Pittsburgh Steelers,
+
+Rivers, Philip, Quarterback, SDG - Los Angeles Chargers,
+
+Moore, Matt, Quarterback, MIA - Miami Dolphins,
+
+Cutler, Jay, Quarterback, CHI - Chicago Bears,
+
+Vick, Michael, Quarterback, PHI - Philadelphia Eagles,
+
+Newton, Cam, Quarterback, CAR - Carolina Panthers,
+
+Campbell, Jason, Quarterback, OAK - Oakland Raiders,
+
+McGee, Stephen, Quarterback, DAL - Dallas Cowboys,
+
+McNabb, Donovan, Quarterback, MIN - Minnesota Vikings,
+
+Hasselbeck, Matt, Quarterback, TEN - Tennessee Titans,
+
+Orlovsky, Dan, Quarterback, IND - Indianapolis Colts,
+
+Kitna, Jon, Quarterback, DAL - Dallas Cowboys,
+
+Kaepernick, Colin, Quarterback, SFO - San Francisco 49ers,
+
+Kolb, Kevin, Quarterback, ARI - Arizona Cardinals,
+
+Flacco, Joe, Quarterback, BAL - Baltimore Ravens,,
+
+Yates, T.J., Quarterback, HOU - Houston Texans,
+
+Palmer, Carson, Quarterback, OAK - Oakland Raiders,
+
+Dalton, Andy, Quarterback, CIN - Cincinnati Bengals,
+
+Jackson, Tarvaris, Quarterback, SEA - Seattle Seahawks,
+
+Fitzpatrick, Ryan, Quarterback, BUF - Buffalo Bills,
+
+Henne, Chad, Quarterback, MIA - Miami Dolphins,
+
+Sanchez, Mark, Quarterback, NYJ - New York Jets,
+
+Orton, Kyle, Quarterback, DEN - Denver Broncos,
+
+Losman, J.P., Quarterback, MIA - Miami Dolphins,
+
+Cassel, Matt, Quarterback, KAN - Kansas City Chiefs,
+
+Webb, Joe, Quarterback, MIN - Minnesota Vikings,
+
+Freeman, Josh, Quarterback, TAM - Tampa Bay Buccaneers,
+
+McCoy, Colt, Quarterback, CLE - Cleveland Browns,
+
+Clemens, Kellen, Quarterback, STL - L.A. Rams,
+
+Tebow, Tim, Quarterback, DEN - Denver Broncos,
+
+Batch, Charlie, Quarterback, PIT - Pittsburgh Steelers,
+
+Grossman, Rex, Quarterback, WAS - Washington Redskins,
+
+Beck, John, Quarterback, WAS - Washington Redskins,
+
+Bradford, Sam, Quarterback, STL - L.A. Rams,
+
+Ponder, Christian, Quarterback, MIN - Minnesota Vikings,
+
+Skelton, John, Quarterback, ARI - Arizona Cardinals,
+
+Redman, Chris, Quarterback, ATL - Atlanta Falcons,
+
+McCown, Josh, Quarterback, CHI - Chicago Bears,
+
+Brunell, Mark, Quarterback, NYJ - New York Jets,
+
+Painter, Curtis, Quarterback, IND - Indianapolis Colts,
+
+Feeley, A.J., Quarterback, STL - L.A. Rams,
+
+Collins, Kerry, Quarterback, IND - Indianapolis Colts,
+
+Gabbert, Blaine, Quarterback, JAC - Jacksonville Jaguars,
+
+Wallace, Seneca, Quarterback, CLE - Cleveland Browns,
+
+Whitehurst, Charlie, Quarterback, SEA - Seattle Seahawks,
+
+Young, Vince, Quarterback, PHI - Philadelphia Eagles,
+
+Johnson, Josh, Quarterback, TAM - Tampa Bay Buccaneers,
+
+Palko, Tyler, Quarterback, KAN - Kansas City Chiefs,
+
+Gradkowski, Bruce, Quarterback, CIN - Cincinnati Bengals,
+
+Bartel, Richard, Quarterback, ARI - Arizona Cardinals,
+
+Kafka, Mike, Quarterback, PHI - Philadelphia Eagles,
+
+Hanie, Caleb, Quarterback, CHI - Chicago Bears,
+
+Brandstater, Tom, Quarterback, STL - L.A. Rams,
+
+McCown, Luke, Quarterback, JAC - Jacksonville Jaguars,
+
+Boller, Kyle, Quarterback, OAK - Oakland Raiders,
+
+Thigpen, Tyler, Quarterback, BUF - Buffalo Bills,
+
+Anderson, Derek, Quarterback, CAR - Carolina Panthers,
+
+Volek, Billy, Quarterback, SDG - Los Angeles Chargers,
+
+Akers, David, Kicker, SFO - San Francisco 49ers,
+
+Nugent, Mike, Kicker, CIN - Cincinnati Bengals,
+
+Rackers, Neil, Kicker, HOU - Houston Texans,
+
+Bailey, Dan, Kicker, DAL - Dallas Cowboys,
+
+Gano, Graham, Kicker, WAS - Washington Redskins,
+
+Janikowski, Sebastian, Kicker, OAK - Oakland Raiders,
+
+Bironas, Rob, Kicker, TEN - Tennessee Titans,
+
+Carpenter, Dan, Kicker, MIA - Miami Dolphins,
+
+Gostkowski, Stephen, Kicker, NWE - New England Patriots,
+
+Gould, Robbie, Kicker, CHI - Chicago Bears,
+
+Kasay, John, Kicker, NOR - New Orleans Saints,
+
+Cundiff, Billy, Kicker, BAL - Baltimore Ravens,,
+
+Bryant, Matt, Kicker, ATL - Atlanta Falcons,
+
+Novak, Nick, Kicker, SDG - Los Angeles Chargers,
+
+Barth, Connor, Kicker, TAM - Tampa Bay Buccaneers,
+
+Hauschka, Steven, Kicker, SEA - Seattle Seahawks,
+
+Dawson, Phil, Kicker, CLE - Cleveland Browns,
+
+Hanson, Jason, Kicker, DET - Detroit Lions,
+
+Succop, Ryan, Kicker, KAN - Kansas City Chiefs,
+
+Crosby, Mason, Kicker, GNB - Green Bay Packers,
+
+Henery, Alex, Kicker, PHI - Philadelphia Eagles,
+
+Suisham, Shaun, Kicker, PIT - Pittsburgh Steelers,
+
+Scobee, Josh, Kicker, JAC - Jacksonville Jaguars,
+
+Vinatieri, Adam, Kicker, IND - Indianapolis Colts,
+
+Longwell, Ryan, Kicker, MIN - Minnesota Vikings,
+
+Mare, Olindo, Kicker, CAR - Carolina Panthers,
+
+Brown, Josh, Kicker, STL - L.A. Rams,
+
+Feely, Jay, Kicker, ARI - Arizona Cardinals,
+
+Prater, Matt, Kicker, DEN - Denver Broncos,
+
+Tynes, Lawrence, Kicker, NYG - New York Giants,
+
+Folk, Nick, Kicker, NYJ - New York Jets,
+
+Lindell, Rian, Kicker, BUF - Buffalo Bills,
+
+Rayner, Dave, Kicker, BUF - Buffalo Bills,
+
+Graham, Shayne, Kicker, MIA - Miami Dolphins,
+
+Kaeding, Nate, Kicker, SDG - Los Angeles Chargers,
+
+Coutu, Brandon, Kicker, BUF - Buffalo Bills,
+
+Buehler, David, Kicker, DAL - Dallas Cowboys,
+
+Jones-Drew, Maurice, Running Back, JAC - Jacksonville Jaguars,
+
+Rice, Ray, Running Back, BAL - Baltimore Ravens,,
+
+Turner, Michael, Running Back, ATL - Atlanta Falcons,
+
+McCoy, LeSean, Running Back, PHI - Philadelphia Eagles,
+
+Foster, Arian, Running Back, HOU - Houston Texans,
+
+Gore, Frank, Running Back, SFO - San Francisco 49ers,
+
+Lynch, Marshawn, Running Back, SEA - Seattle Seahawks,
+
+McGahee, Willis, Running Back, DEN - Denver Broncos,
+
+Jackson, Steven, Running Back, STL - L.A. Rams,
+
+Mathews, Ryan, Running Back, SDG - Los Angeles Chargers,
+
+Bush, Reggie, Running Back, MIA - Miami Dolphins,
+
+Benson, Cedric, Running Back, CIN - Cincinnati Bengals,
+
+Greene, Shonn, Running Back, NYJ - New York Jets,
+
+Johnson, Chris, Running Back, TEN - Tennessee Titans,
+
+Wells, Beanie, Running Back, ARI - Arizona Cardinals,
+
+Forte, Matt, Running Back, CHI - Chicago Bears,
+
+Bush, Michael, Running Back, OAK - Oakland Raiders,
+
+Peterson, Adrian, Running Back, MIN - Minnesota Vikings,
+
+Tate, Ben, Running Back, HOU - Houston Texans,
+
+Jackson, Fred, Running Back, BUF - Buffalo Bills,
+
+Mendenhall, Rashard, Running Back, PIT - Pittsburgh Steelers,
+
+Murray, DeMarco, Running Back, DAL - Dallas Cowboys,
+
+Williams, DeAngelo, Running Back, CAR - Carolina Panthers,
+
+Blount, LeGarrette, Running Back, TAM - Tampa Bay Buccaneers,
+
+Stewart, Jonathan, Running Back, CAR - Carolina Panthers,
+
+Green-Ellis, BenJarvus, Running Back, NWE - New England Patriots,
+
+Bradshaw, Ahmad, Running Back, NYG - New York Giants,
+
+Brown, Donald, Running Back, IND - Indianapolis Colts,
+
+Helu, Roy, Running Back, WAS - Washington Redskins,
+
+McFadden, Darren, Running Back, OAK - Oakland Raiders,
+
+Sproles, Darren, Running Back, NOR - New Orleans Saints,
+
+Battle, Jackie, Running Back, KAN - Kansas City Chiefs,
+
+Hillis, Peyton, Running Back, CLE - Cleveland Browns,
+
+Thomas, Daniel, Running Back, MIA - Miami Dolphins,
+
+Starks, James, Running Back, GNB - Green Bay Packers,
+
+Jones, Felix, Running Back, DAL - Dallas Cowboys,
+
+Jacobs, Brandon, Running Back, NYG - New York Giants,
+
+Thomas, Pierre, Running Back, NOR - New Orleans Saints,
+
+Spiller, C.J., Running Back, BUF - Buffalo Bills,
+
+Grant, Ryan, Running Back, GNB - Green Bay Packers,
+
+Gerhart, Toby, Running Back, MIN - Minnesota Vikings,
+
+McCluster, Dexter, Running Back, KAN - Kansas City Chiefs,
+
+Tolbert, Mike, Running Back, SDG - Los Angeles Chargers,
+
+Redman, Isaac, Running Back, PIT - Pittsburgh Steelers,
+
+Jones, Thomas, Running Back, KAN - Kansas City Chiefs,
+
+Ingram, Mark, Running Back, NOR - New Orleans Saints,
+
+Hunter, Kendall, Running Back, SFO - San Francisco 49ers,
+
+Williams, Ricky, Running Back, BAL - Baltimore Ravens,,
+
+Ridley, Stevan, Running Back, NWE - New England Patriots,
+
+Addai, Joseph, Running Back, IND - Indianapolis Colts,
+
+Barber, Marion, Running Back, CHI - Chicago Bears,
+
+Ball, Lance, Running Back, DEN - Denver Broncos,
+
+Best, Jahvid, Running Back, DET - Detroit Lions,
+
+Scott, Bernard, Running Back, CIN - Cincinnati Bengals,
+
+Carter, Delone, Running Back, IND - Indianapolis Colts,
+
+Ivory, Chris, Running Back, NOR - New Orleans Saints,
+
+Williams, Carnell, Running Back, STL - L.A. Rams,
+
+Smith, Kevin, Running Back, DET - Detroit Lions,
+
+Woodhead, Danny, Running Back, NWE - New England Patriots,
+
+Ogbonnaya, Chris, Running Back, CLE - Cleveland Browns,
+
+Bell, Kahlil, Running Back, CHI - Chicago Bears,
+
+Royster, Evan, Running Back, WAS - Washington Redskins,
+
+Hightower, Tim, Running Back, WAS - Washington Redskins,
+
+Morris, Maurice, Running Back, DET - Detroit Lions,
+
+Tomlinson, LaDainian, Running Back, NYJ - New York Jets,
+
+Hardesty, Montario, Running Back, CLE - Cleveland Browns,
+
+Washington, Leon, Running Back, SEA - Seattle Seahawks,
+
+Graham, Earnest, Running Back, TAM - Tampa Bay Buccaneers,
+
+Rodgers, Jacquizz, Running Back, ATL - Atlanta Falcons,
+
+Torain, Ryan, Running Back, WAS - Washington Redskins,
+
+Williams, Keiland, Running Back, DET - Detroit Lions,
+
+Ringer, Javon, Running Back, TEN - Tennessee Titans,
+
+Moreno, Knowshon, Running Back, DEN - Denver Broncos,
+
+Stephens-Howling, LaRod, Running Back, ARI - Arizona Cardinals,
+
+Ware, D.J., Running Back, NYG - New York Giants,
+
+Moore, Mewelde, Running Back, PIT - Pittsburgh Steelers,
+
+Ward, Derrick, Running Back, HOU - Houston Texans,
+
+Choice, Tashard, Running Back, BUF - Buffalo Bills,
+
+Snelling, Jason, Running Back, ATL - Atlanta Falcons,
+
+Forsett, Justin, Running Back, SEA - Seattle Seahawks,
+
+Brown, Ronnie, Running Back, PHI - Philadelphia Eagles,
+
+McKnight, Joe, Running Back, NYJ - New York Jets,
+
+Karim, Deji, Running Back, JAC - Jacksonville Jaguars,
+
+Dwyer, Jonathan, Running Back, PIT - Pittsburgh Steelers,
+
+Reece, Marcel, Running Back, OAK - Oakland Raiders,
+
+Lumpkin, Kregg, Running Back, TAM - Tampa Bay Buccaneers,
+
+Smith, Alfonso, Running Back, ARI - Arizona Cardinals,
+
+Lewis, Dion, Running Back, PHI - Philadelphia Eagles,
+
+Brinkley, Curtis, Running Back, SDG - Los Angeles Chargers,
+
+Morris, Sammy, Running Back, DAL - Dallas Cowboys,
+
+Hester, Jacob, Running Back, SDG - Los Angeles Chargers,
+
+Dixon, Anthony, Running Back, SFO - San Francisco 49ers,
+
+Leonard, Brian, Running Back, CIN - Cincinnati Bengals,
+
+Slaton, Steve, Running Back, MIA - Miami Dolphins,
+
+Charles, Jamaal, Running Back, KAN - Kansas City Chiefs,
+
+Kuhn, John, Running Back, GNB - Green Bay Packers,
+
+Johnson, Jeremiah, Running Back, DEN - Denver Broncos,
+
+Taylor, Chester, Running Back, ARI - Arizona Cardinals,
+
+Tanner, Phillip, Running Back, DAL - Dallas Cowboys,
+
+Jones, Taiwan, Running Back, OAK - Oakland Raiders,
+
+Saine, Brandon, Running Back, GNB - Green Bay Packers,
+
+Norwood, Jerious, Running Back, STL - L.A. Rams,
+
+Faulk, Kevin, Running Back, NWE - New England Patriots,
+
+Vereen, Shane, Running Back, NWE - New England Patriots,
+
+Madu, Mossis, Running Back, TAM - Tampa Bay Buccaneers,
+
+Booker, Lorenzo, Running Back, MIN - Minnesota Vikings,
+
+McClain, Le'Ron, Running Back, KAN - Kansas City Chiefs,
+
+Allen, Armando, Running Back, CHI - Chicago Bears,
+
+Cartwright, Rock, Running Back, OAK - Oakland Raiders,
+
+Larsen, Spencer, Running Back, DEN - Denver Broncos,
+
+Harper, Jamie, Running Back, TEN - Tennessee Titans,
+
+Conner, John, Running Back, NYJ - New York Jets,
+
+Harris, DuJuan, Running Back, JAC - Jacksonville Jaguars,
+
+Hilliard, Lex, Running Back, MIA - Miami Dolphins,
+
+Clay, John, Running Back, PIT - Pittsburgh Steelers,
+
+Harrison, Jerome, Running Back, DET - Detroit Lions,
+
+Owens, Montell, Running Back, JAC - Jacksonville Jaguars,
+
+White, Johnny, Running Back, BUF - Buffalo Bills,
+
+Leach, Vonta, Running Back, BAL - Baltimore Ravens,,
+
+Young, Darrel, Running Back, WAS - Washington Redskins,
+
+Logan, Stefan, Running Back, DET - Detroit Lions,
+
+Vaughan, Josh, Running Back, CAR - Carolina Panthers,
+
+Hall, Ahmard, Running Back, TEN - Tennessee Titans,
+
+Powell, Bilal, Running Back, NYJ - New York Jets,
+
+Scott, Da'Rel, Running Back, NYG - New York Giants,
+
+Peerman, Cedric, Running Back, CIN - Cincinnati Bengals,
+
+Bolen, Brock, Running Back, JAC - Jacksonville Jaguars,
+
+Miller, Brit, Running Back, STL - L.A. Rams,
+
+Tonga, Manase, Running Back, OAK - Oakland Raiders,
+
+Clayton, Thomas, Running Back, CLE - Cleveland Browns,
+
+Casey, James, Running Back, HOU - Houston Texans,
+
+Green, Alex, Running Back, GNB - Green Bay Packers,
+
+Felton, Jerome, Running Back, IND - Indianapolis Colts,
+
+Marecic, Owen, Running Back, CLE - Cleveland Browns,
+
+Miller, Bruce, Running Back, SFO - San Francisco 49ers,
+
+Allen, Anthony, Running Back, BAL - Baltimore Ravens,,
+
+Robinson, Michael, Running Back, SEA - Seattle Seahawks,
+
+Jones, Greg, Running Back, JAC - Jacksonville Jaguars,
+
+Schmitt, Owen, Running Back, PHI - Philadelphia Eagles,
+
+Collins, Jed, Running Back, NOR - New Orleans Saints,
+
+Fiammetta, Tony, Running Back, DAL - Dallas Cowboys,
+
+Sherman, Anthony, Running Back, ARI - Arizona Cardinals,
+
+Johnson, Larry, Running Back, MIA - Miami Dolphins,
+
+Williams, Eddie, Running Back, CLE - Cleveland Browns,
+
+Smith, Armond, Running Back, CLE - Cleveland Browns,
+
+Mughelli, Ovie, Running Back, ATL - Atlanta Falcons,
+
+Vickers, Lawrence, Running Back, HOU - Houston Texans,
+
+Maui'a, Reagan, Running Back, ARI - Arizona Cardinals,
+
+Hall, Korey, Running Back, NOR - New Orleans Saints,
+
+Hynoski, Henry, Running Back, NYG - New York Giants,
+
+Chapas, Shaun, Running Back, DAL - Dallas Cowboys,
+
+McIntyre, Corey, Running Back, BUF - Buffalo Bills,
+
+Mahaffey, Ryan, Running Back, IND - Indianapolis Colts,
+
+Norris, Moran, Running Back, SFO - San Francisco 49ers,
+
+Buckley, Eldra, Running Back, DET - Detroit Lions,
+
+Polite, Lousaka, Running Back, NWE - New England Patriots,
+
+Massey, Chris, Running Back, CHI - Chicago Bears,
+
+Cox, Mike, Running Back, ATL - Atlanta Falcons,
+
+Smith, Antone, Running Back, ATL - Atlanta Falcons,
+
+Pressley, Chris, Running Back, CIN - Cincinnati Bengals,
+
+D'Imperio, Ryan, Running Back, MIN - Minnesota Vikings,
+
+Lorig, Erik, Running Back, TAM - Tampa Bay Buccaneers,
+
+Gronkowski, Chris, Running Back, IND - Indianapolis Colts,
+
+Porter, Quinn, Running Back, STL - L.A. Rams,
+
+Johnson, David, Running Back, PIT - Pittsburgh Steelers,
+
+Brown, Aaron, Running Back, DET - Detroit Lions,
+
+Clutts, Tyler, Running Back, CHI - Chicago Bears,
+
+Sellers, Mike, Running Back, WAS - Washington Redskins,
+
+Goodson, Mike, Running Back, CAR - Carolina Panthers,
+
+Clay, Charles, Running Back, MIA - Miami Dolphins,
+
+Johnson, Quinn, Running Back, TEN - Tennessee Titans,
+
+Washington, Chauncey, Running Back, DAL - Dallas Cowboys,
+
+Gronkowski, Rob, Tight End, NWE - New England Patriots,
+
+Graham, Jimmy, Tight End, NOR - New Orleans Saints,
+
+Witten, Jason, Tight End, DAL - Dallas Cowboys,
+
+Hernandez, Aaron, Tight End, NWE - New England Patriots,
+
+Gonzalez, Tony, Tight End, ATL - Atlanta Falcons,
+
+Keller, Dustin, Tight End, NYJ - New York Jets,
+
+Celek, Brent, Tight End, PHI - Philadelphia Eagles,
+
+Davis, Fred, Tight End, WAS - Washington Redskins,
+
+Davis, Vernon, Tight End, SFO - San Francisco 49ers,
+
+Gates, Antonio, Tight End, SDG - Los Angeles Chargers,
+
+Pettigrew, Brandon, Tight End, DET - Detroit Lions,
+
+Finley, Jermichael, Tight End, GNB - Green Bay Packers,
+
+Winslow, Kellen, Tight End, TAM - Tampa Bay Buccaneers,
+
+Cook, Jared, Tight End, TEN - Tennessee Titans,
+
+Daniels, Owen, Tight End, HOU - Houston Texans,
+
+Miller, Heath, Tight End, PIT - Pittsburgh Steelers,
+
+Ballard, Jake, Tight End, NYG - New York Giants,
+
+Gresham, Jermaine, Tight End, CIN - Cincinnati Bengals,
+
+Olsen, Greg, Tight End, CAR - Carolina Panthers,
+
+Dickson, Ed, Tight End, BAL - Baltimore Ravens,,
+
+Lewis, Marcedes, Tight End, JAC - Jacksonville Jaguars,
+
+Shockey, Jeremy, Tight End, CAR - Carolina Panthers,
+
+Fasano, Anthony, Tight End, MIA - Miami Dolphins,
+
+Watson, Benjamin, Tight End, CLE - Cleveland Browns,
+
+Shiancoe, Visanthe, Tight End, MIN - Minnesota Vikings,
+
+Pitta, Dennis, Tight End, BAL - Baltimore Ravens,,
+
+Chandler, Scott, Tight End, BUF - Buffalo Bills,
+
+Boss, Kevin, Tight End, OAK - Oakland Raiders,
+
+Dreessen, Joel, Tight End, HOU - Houston Texans,
+
+Clark, Dallas, Tight End, IND - Indianapolis Colts,
+
+Kendricks, Lance, Tight End, STL - L.A. Rams,
+
+Scheffler, Tony, Tight End, DET - Detroit Lions,
+
+Moore, Evan, Tight End, CLE - Cleveland Browns,
+
+Heap, Todd, Tight End, ARI - Arizona Cardinals,
+
+McMichael, Randy, Tight End, SDG - Los Angeles Chargers,
+
+King, Jeff, Tight End, ARI - Arizona Cardinals,
+
+Fells, Daniel, Tight End, DEN - Denver Broncos,
+
+Rudolph, Kyle, Tight End, MIN - Minnesota Vikings,
+
+Pope, Leonard, Tight End, KAN - Kansas City Chiefs,
+
+Miller, Zach, Tight End, SEA - Seattle Seahawks,
+
+Davis, Kellen, Tight End, CHI - Chicago Bears,
+
+Walker, Delanie, Tight End, SFO - San Francisco 49ers,
+
+Tamme, Jacob, Tight End, IND - Indianapolis Colts,
+
+Stevens, Craig, Tight End, TEN - Tennessee Titans,
+
+Harbor, Clay, Tight End, PHI - Philadelphia Eagles,
+
+Myers, Brandon, Tight End, OAK - Oakland Raiders,
+
+McCoy, Anthony, Tight End, SEA - Seattle Seahawks,
+
+Bennett, Martellus, Tight End, DAL - Dallas Cowboys,
+
+Paulsen, Logan, Tight End, WAS - Washington Redskins,
+
+Pascoe, Bear, Tight End, NYG - New York Giants,
+
+Housler, Rob, Tight End, ARI - Arizona Cardinals,
+
+Smith, Alex, Tight End, CLE - Cleveland Browns,
+
+Rosario, Dante, Tight End, DEN - Denver Broncos,
+
+Lee, Donald, Tight End, CIN - Cincinnati Bengals,
+
+Phillips, John, Tight End, DAL - Dallas Cowboys,
+
+Beckum, Travis, Tight End, NYG - New York Giants,
+
+Stocker, Luke, Tight End, TAM - Tampa Bay Buccaneers,
+
+Hoomanawanui, Michael, Tight End, STL - L.A. Rams,
+
+Morrah, Cameron, Tight End, SEA - Seattle Seahawks,
+
+Palmer, Michael, Tight End, ATL - Atlanta Falcons,
+
+Bajema, Billy, Tight End, STL - L.A. Rams,
+
+Cooley, Chris, Tight End, WAS - Washington Redskins,
+
+Mulligan, Matthew, Tight End, NYJ - New York Jets,
+
+Cloherty, Colin, Tight End, JAC - Jacksonville Jaguars,
+
+O'Connell, Jake, Tight End, KAN - Kansas City Chiefs,
+
+Potter, Zach, Tight End, JAC - Jacksonville Jaguars,
+
+Spaeth, Matt, Tight End, CHI - Chicago Bears,
+
+Eldridge, Brody, Tight End, IND - Indianapolis Colts,
+
+Cochart, Colin, Tight End, CIN - Cincinnati Bengals,
+
+Miller, Zach, Tight End, JAC - Jacksonville Jaguars,
+
+Heller, Will, Tight End, DET - Detroit Lions,
+
+Caussin, Mike, Tight End, BUF - Buffalo Bills,
+
+Pianalto, Zack, Tight End, TAM - Tampa Bay Buccaneers,
+
+Crabtree, Tom, Tight End, GNB - Green Bay Packers,
+
+Quarless, Andrew, Tight End, GNB - Green Bay Packers,
+
+Cumberland, Jeff, Tight End, NYJ - New York Jets,
+
+Cameron, Jordan, Tight End, CLE - Cleveland Browns,
+
+Sperry, Kory, Tight End, SDG - Los Angeles Chargers,
+
+Saunders, Weslye, Tight End, PIT - Pittsburgh Steelers,
+
+Brock, Kevin, Tight End, BUF - Buffalo Bills,
+
+Baker, Josh, Tight End, NYJ - New York Jets,
+
+Becht, Anthony, Tight End, KAN - Kansas City Chiefs,
+
+Dray, Jim, Tight End, ARI - Arizona Cardinals,
+
+Graham, Daniel, Tight End, TEN - Tennessee Titans,
+
+Paul, Niles, Tight End, WAS - Washington Redskins,
+
+Green, Virgil, Tight End, DEN - Denver Broncos,
+
+Graham, Garrett, Tight End, HOU - Houston Texans,
+
+Gilmore, John, Tight End, NOR - New Orleans Saints,
+
+Peelle, Justin, Tight End, SFO - San Francisco 49ers,
+
+Thomas, David, Tight End, NOR - New Orleans Saints,
+
+Ausberry, David, Tight End, OAK - Oakland Raiders,
+
+Brockel, Richie, Tight End, CAR - Carolina Panthers,
+
+Williams, D.J., Tight End, GNB - Green Bay Packers,
+
+Smith, Lee, Tight End, BUF - Buffalo Bills,
+
+Hill, Anthony, Tight End, IND - Indianapolis Colts,
+
+Mastrud, Jeron, Tight End, MIA - Miami Dolphins,
+
+Kelly, Reggie, Tight End, ATL - Atlanta Falcons,
+
+Thomas, Julius, Tight End, DEN - Denver Broncos,
+
+Reisner, Allen, Tight End, MIN - Minnesota Vikings,
+
+Taylor, Ryan, Tight End, GNB - Green Bay Packers,
+
+Kleinsasser, Jim, Tight End, MIN - Minnesota Vikings,
+
+Higgins, Michael, Tight End, NOR - New Orleans Saints,
+
+Spach, Stephen, Tight End, STL - L.A. Rams,
+
+Gordon, Richard, Tight End, OAK - Oakland Raiders,
+
+Maneri, Steve, Tight End, KAN - Kansas City Chiefs,
+
+Franklin, Collin, Tight End, TAM - Tampa Bay Buccaneers,
+
+Wilson, Kris, Tight End, BAL - Baltimore Ravens,,
+
+Byrd, Dominique, Tight End, SEA - Seattle Seahawks,
+
+Rucker, Martin, Tight End, DAL - Dallas Cowboys,
+
+Leach, Mike, Tight End, ARI - Arizona Cardinals,
+
+Snow, Justin, Tight End, IND - Indianapolis Colts,
+
+Quinn, Richard, Tight End, WAS - Washington Redskins,
+
+Gronkowski, Dan, Tight End, CLE - Cleveland Browns,
+
+Onobun, Fendi, Tight End, JAC - Jacksonville Jaguars,
+
+Jennings, Brian, Tight End, SFO - San Francisco 49ers,
+
+Hartsock, Ben, Tight End, CAR - Carolina Panthers,
+
+Zelenka, Joe, Tight End, ATL - Atlanta Falcons,
+
+Martin, David, Tight End, BUF - Buffalo Bills
+]

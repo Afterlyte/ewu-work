@@ -1,0 +1,39 @@
+ Information on this checking accounts:
+ 
+ Account Number: 884116055
+ Account Balance: 100.00
+ 
+ Making a deposit of 300
+ Information on this checking account is 
+ Account Number: 884116055
+ Account Balance: 400.00
+ 
+ Information on this checking account is 
+ Account Number: 510301300
+ Account Balance: 555.66
+ 
+ Making a withdrawal of 132.70
+ Information on this checking account is 
+ Account Number: 510301300
+ Account Balance: 422.96
+ 
+ Making a withdrawal of 750
+ Account Balance: 400.00
+ 
+ Examine accounts
+ Accounts are EXACTLY the same
+ 
+ Information on this checking account is 
+ Account Number: 2001556687
+ Account Balance: $2000.04
+ 
+ Information on this checking account is 
+ Account Number: 884116055
+ Account Balance: $400.0
+ 
+ Information on this checking account is 
+ Account Number: 510301300
+ Account Balance: $422.96
+ 
+ Accounts are NOT the same
+ 

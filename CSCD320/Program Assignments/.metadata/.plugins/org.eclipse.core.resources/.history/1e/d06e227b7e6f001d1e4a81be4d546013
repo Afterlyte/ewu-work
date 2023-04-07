@@ -1,0 +1,33 @@
+// Author: Ian Kaiserman
+
+// Graph object for storing various information and functions for graph representation
+public class Graph {
+	private LinkedList[] adj;
+	private LinkedList topoSort;
+	private int time;
+	private enum Color {
+		WHITE,
+		GRAY,
+		BLACK
+	};
+	private Color[] colors;
+	private int[][] timestamps;
+	private int[] parents;
+	
+	// Constructor for Graph object (takes Linked List array)
+	Graph(LinkedList[] adj) {
+		this.adj = adj;
+		this.timestamps = new int[adj.length][2];
+		this.parents = new int[adj.length];
+		this.colors = new Color[adj.length];
+	}
+	
+	public void dijkstra(LinkedList.Node s) {
+		
+	}
+	
+	// Returns the topological order of the graph stored in a Linked List
+	public LinkedList getTopoSort() {
+		return this.topoSort;
+	}
+}

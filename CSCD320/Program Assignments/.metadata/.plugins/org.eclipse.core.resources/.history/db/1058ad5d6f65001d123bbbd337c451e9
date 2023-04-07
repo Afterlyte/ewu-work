@@ -1,0 +1,152 @@
+import java.util.Queue;
+
+public class LinkedList {
+	
+	private class Node {
+		private Object data;   //Assume data implemented Comparable
+		private Node next, prev;
+		private Node(Object data, Node pref, Node next)
+		{
+			this.data = data;
+			this.prev = pref;
+			this.next = next;
+		}
+	}
+
+	private Node head;
+	private int size;
+
+	public LinkedList() {
+		this.head = new Node(null, null, null );
+		this.head.next = this.head;
+		this.head.prev=this.head;
+		this.size = 0;
+	}
+
+	
+	public void addFirst(Object data) {
+		Node nn = new Node(data, this.head, this.head.next);
+		this.head.next.prev = nn;
+		this.head.next = nn;
+		this.size ++;
+	}
+	
+	public void addLast(Object data) {
+		if(this.size == 0) {
+			this.addFirst(data);
+		}
+		else {
+			Node cur = this.head.prev;
+			Node nn = new Node(data, cur, this.head);
+			this.head.prev = nn;
+			cur.next = nn;
+			this.size ++;
+		}
+	}
+	
+	public Object removeFirst() {
+		Node cur = this.head.next;
+		cur.prev.next = cur.next;
+		cur.next.prev = cur.prev;
+		this.size--;
+		return cur.data;
+	}
+	
+	public void addOrdered(Object data) {
+		Node cur = this.head.next, prev = this.head;
+		Node nn = new Node(data, null, null);
+		while(cur != this.head && ((Comparable)cur.data).compareTo((Comparable)data) < 0) {
+			prev = cur;
+			cur = cur.next;
+		}
+		nn.next = cur;
+		nn.prev = prev;
+		prev.next = nn;
+		cur.prev = nn;
+		this.size++;
+	}
+	
+	public void InsertionSort() {
+		LinkedList newList = new LinkedList();
+		Node cur = this.head.next;
+		while(cur != this.head) {
+			newList.addOrdered(cur.data);
+			cur = cur.next;
+		}
+		this.head = newList.head;
+	}
+	
+	public static LinkedList merge(LinkedList a, LinkedList b) {
+		LinkedList res = new LinkedList();
+		while(a.size != 0 && b.size != 0) {
+			LinkedList.Node curA = a.head.next, curB = b.head.next;
+			if(((Comparable)curA.data).compareTo((Comparable)curB.data) < 0) {
+				res.addLast(curA.data);
+				a.removeFirst();
+			}
+			else {
+				res.addLast(curB.data);
+				b.removeFirst();
+			}
+		}
+		while(a.size != 0) {
+			LinkedList.Node cur = a.head.next;
+			res.addLast(cur.data);
+			a.removeFirst();
+		}
+		while(b.size != 0) {
+			LinkedList.Node cur = b.head.next;
+			res.addLast(cur.data);
+			b.removeFirst();
+		}
+		return res;
+	}
+	
+	@Override
+	public String toString() {
+		Node cur = this.head.next;
+		String res = "[" + cur.data;
+		cur = cur.next;
+		while(cur != this.head) {
+			res += ", " + cur.data;
+			cur = cur.next;
+		}
+		res += "]";
+		return res;
+	}
+
+	public boolean isSorted() {
+		Node b = this.head.next.next, a = this.head.next;
+		while(b != this.head) {
+			if(((Comparable)b.data).compareTo((Comparable)a.data) < 0) {
+				return false;
+			}
+			a = b;
+			b = b.next;
+		}
+		return true;
+	}
+
+	public String getSize() {
+		return "" + this.size;
+	}
+
+	public void MergeSort() throws Exception {
+		Queue q = new Queue();
+		Node cur = this.head.next;
+		while(cur != this.head) {
+			LinkedList newList = new LinkedList();
+			newList.addFirst(cur.data);
+			q.enqueue(newList);
+			cur = cur.next;
+		}
+		while(q.getSize() > 1) {
+			LinkedList sublist1 = (LinkedList) q.dequeue();
+			LinkedList sublist2 = (LinkedList) q.dequeue();
+			LinkedList tempList = merge(sublist1, sublist2);
+			q.enqueue(tempList);
+		}
+		this.head = ((LinkedList)q.dequeue()).head;
+	}
+	
+}

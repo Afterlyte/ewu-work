@@ -1,0 +1,24 @@
+package prog3;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FastMatrixMulti {
+	
+	
+
+	public static void main(String[] args) {
+		File input = new File(args[0]);
+		Scanner fscan;
+		try {
+			Scanner fscan = new Scanner(input);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		while(fscan.hasNext()) {
+			
+		}
+	}
+
+}

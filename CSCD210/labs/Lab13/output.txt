@@ -1,0 +1,12 @@
+DOW Jones Industrial Average - DOW
+Purchase Price: 0.0
+Current Price: 12.0
+ 
+Microsoft - MSFT
+Purchase Price: 10.0
+Current Price: 53.17
+ 
+Charles Schwab - SCHW
+Purchase Price: 5.0
+Current Price: 30.18
+ 

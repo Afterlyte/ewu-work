@@ -1,0 +1,10 @@
+
+public class Graph {
+	private LinkedList[] adj;
+	private boolean[] visited;
+	
+	Graph(LinkedList[] adj) {
+		this.adj = adj;
+		this.visited = new boolean[adj.length];
+	}
+}

@@ -1,0 +1,11 @@
+To run the server (do first)
+1. Open terminal
+2. run "javac Server.java"
+3. run "java Server"
+
+To run the client
+1. Open second terminal
+2. run "javac Client.java"
+3. run "java Client"
+    a. Some logging info should show up in the server window, as well as a prompt to enter a number on the client
+4. Enter numbers/stress tests into the client terminal window

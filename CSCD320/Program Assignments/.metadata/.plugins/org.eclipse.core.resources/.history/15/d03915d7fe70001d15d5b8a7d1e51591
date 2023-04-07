@@ -1,0 +1,12 @@
+
+public class MinHeap {
+	private int[][] minHeap;
+	private int heapSize;
+	private int capacity;
+	
+	public MinHeap(int n) {
+		this.capacity = n;
+		this.minHeap = new int[n][2];
+		this.heapSize = 0;
+	}
+}

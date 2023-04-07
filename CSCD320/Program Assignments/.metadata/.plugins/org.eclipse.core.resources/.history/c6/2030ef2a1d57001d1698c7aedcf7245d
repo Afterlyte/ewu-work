@@ -1,0 +1,15 @@
+// Author: Ian Kaiserman
+
+public class Richest {
+
+	static int[] list = new int[10000];
+	
+	static void minHeapify(int i) {
+		
+	}
+	
+	public static void main(String[] args) {
+		File numbers = new File(args[0]);
+	}
+
+}

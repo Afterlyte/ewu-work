@@ -1,0 +1,31 @@
+Employee List
+Programmer: Mr. Ima Nerd
+Programmer: Mrs. Ima Nerd
+Accountant: Mr. Bean Counter
+Accountant: Mrs. Bean Counter
+Lawyer: Mr. Lawyer
+Lawyer: Mrs. Lawyer
+
+Employee Salaries
+Mr. Ima Nerd - 60000.0
+Mrs. Ima Nerd - 65000.0
+Mr. Bean Counter - 100000.0
+Mrs. Bean Counter - 75000.0
+Mr. Lawyer - 180000.0
+Mrs. Lawyer - 190000.0
+
+Employee Report
+I am a Programmer.  I get 60000.0,  and I get a bus pass.
+I am a Programmer.  I get 65000.0,  and I do not get a bus pass.
+I am an accountant.  I make 100000.0 plus a parking allowance of 50.0
+I am an accountant.  I make 75000.0 plus a parking allowance of 150.0
+I am a lawyer.  I get 180000.0,  and I have 25 shares of stock.
+I am a lawyer.  I get 190000.0,  and I have 125 shares of stock.
+
+Employee List
+Accountant - Mrs. Bean Counter - 75000.0
+Accountant - Mr. Bean Counter - 100000.0
+Lawyer - Mr. Lawyer - 180000.0
+Lawyer - Mrs. Lawyer - 190000.0
+Programmer - Mr. Ima Nerd - 60000.0
+Programmer - Mrs. Ima Nerd - 65000.0

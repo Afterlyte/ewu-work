@@ -1,0 +1,78 @@
+
+public class Graph {
+	private LinkedList[] adj;
+	private int[] distances;
+	private int[] parents;
+	private MinHeap minHeap;
+	private LinkedList shortest;
+	
+	public Graph(LinkedList[] v) {
+		this.adj = v;
+		this.distances = new int[v.length];
+		this.parents = new int[v.length];
+		this.minHeap = new MinHeap(v.length + 1);
+		this.shortest = new LinkedList();
+	}
+	
+	public LinkedList dijkstra(int s) {
+		for(LinkedList i : this.adj) {
+			this.distances[i.getFirst()[0]] = Integer.MAX_VALUE;
+			this.parents[i.getFirst()[0]] = -1;
+		}
+		this.distances[s] = 0;
+		shortest = new LinkedList();
+		for(LinkedList j : this.adj) {
+			int v = j.getFirst()[0];
+			minHeap.insertKey(new int[] {v, this.distances[v]});
+		}
+		while(this.minHeap.getHeapSize() != 0) {
+			int[] u = this.minHeap.extractMin();
+			if(u[1] != Integer.MAX_VALUE) {
+				shortest.addLast(u);
+				for(int i = 1; i < this.adj[u[0]].getSize(); i++) {
+					int[] v = this.adj[u[0]].getAtIndex(i);
+					if(this.distances[v[0]] > this.distances[u[0]] + v[1]) {
+						this.distances[v[0]] = this.distances[u[0]] + v[1];
+						this.minHeap.decreaseKey(v[0], this.distances[v[0]]);
+						this.parents[v[0]] = u[0];
+					}
+				}
+			}
+		}
+		return shortest;
+	}
+
+	public int[] getParents() {
+		return this.parents;
+	}
+	
+	public void printPath(int v) {
+		LinkedList[] paths = new LinkedList[this.parents.length];
+		String res = "";
+		for(int i = 0; i < parents.length; i++) {
+			if(v != i) {
+				paths[i] = new LinkedList();
+				paths[i].addFirst(new int[] {i, -1});
+				int j = i;
+				while(this.parents[j] != -1) {
+					paths[i].addFirst(new int[] {this.parents[j], -1});
+					j = this.parents[j];
+				}
+			}
+		}
+		for(LinkedList l : paths) {
+			if(l != null) {
+				res += "[" + l.getLast()[0] + "] ";
+				if(l.getSize() == 0) res += "unreachable\n";
+				else {
+					res += "shortest path:(" + l.getFirst()[0];
+					for(int i = 1; i < l.getSize(); i++) {
+						res += "," + l.getAtIndex(i)[0];
+					}
+					res += ") shortest distance:" + this.shortest.getAtIndex(i-1)[0] + "\n";
+				}
+			}
+		}
+		System.out.print(res);
+	}
+}

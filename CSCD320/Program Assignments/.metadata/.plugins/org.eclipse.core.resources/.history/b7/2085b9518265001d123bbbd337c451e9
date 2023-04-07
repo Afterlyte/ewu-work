@@ -1,0 +1,38 @@
+
+public class Graph {
+	private LinkedList[] adj;
+	private boolean[] visited;
+	private LinkedList dfs;
+	private int time;
+	private enum color;
+	
+	Graph(LinkedList[] adj) {
+		this.adj = adj;
+		this.visited = new boolean[adj.length];
+	}
+	
+	public void DFS() {
+		this.dfs = new LinkedList();
+		for(int i = 0; i < this.adj.length; i++) {
+			visited[i] = false;
+		}
+		for(int j = 0; j < this.adj.length; j++) {
+			if(visited[j] == false) this.graph_DFS(adj[j]);
+		}
+	}
+
+	private void graph_DFS(LinkedList s) {
+		int x = (int) s.getFirst();
+		dfs.addLast(s.getFirst());
+		this.visited[x] = true;
+		for(int i = 1; i < s.getSize(); i++) {
+			if(this.visited[(int) s.getAtIndex(i)] == false) {
+				graph_DFS(adj[(int) s.getAtIndex(i)]);
+			}
+		}
+	}
+	
+	public LinkedList getDFS() {
+		return this.dfs;
+	}
+}

@@ -1,0 +1,38 @@
+package prog3;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FastMatrixMulti {
+	
+	private static int findMatrixChain(int[] dims, int length) {
+		int[][] m = new int[n][n];
+		return length;
+	}	
+
+	public static void main(String[] args) {
+		File input = new File(args[0]);
+		Scanner lines = null;
+		Scanner fscan = null;
+		int count = 0;
+		try {
+			fscan = new Scanner(input);
+			lines = new Scanner(input);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		while(lines.hasNextInt()) {
+			count++;
+			lines.nextInt();
+		}
+		int[] dims = new int[count];
+		for(int i = 0; i < dims.length; i++) {
+			dims[i] = fscan.nextInt();
+		}
+		int cost = findMatrixChain(dims, dims.length);
+	}
+
+
+
+}

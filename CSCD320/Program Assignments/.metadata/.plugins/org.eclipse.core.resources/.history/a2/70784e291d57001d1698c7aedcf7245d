@@ -1,0 +1,11 @@
+// Author: Ian Kaiserman
+
+public class Richest {
+
+	static int[] list = new int[10000];
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

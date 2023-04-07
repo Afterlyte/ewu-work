@@ -1,0 +1,60 @@
+public class LinkedList {
+	
+	private class Node {
+		private Object data;   //Assume data implemented Comparable
+		private Node next;
+		private Node(Object data, Node next)
+		{
+			this.data = data;
+			this.next = next;
+		}
+	}
+
+	private Node head;
+	private int size;
+
+	public LinkedList() {
+		this.head = new Node(null, null );
+		this.size = 0;
+	}
+
+	
+	public void addFirst(Object data) {
+		Node nn = new Node(data, this.head);
+		this.head.next = nn;
+		this.size++;
+	}
+	
+	public void addLast(Object data) {
+		if(this.size == 0) {
+			this.addFirst(data);
+		}
+		else {
+			Node cur = this.head;
+			while(cur.next != null) {
+				cur = cur.next;
+			}
+			Node nn = new Node(data, null);
+			cur.next = nn;
+			this.size ++;
+		}
+	}
+	
+	@Override
+	public String toString() {
+		Node cur = this.head.next;
+		String res = "[" + cur.data;
+		cur = cur.next;
+		while(cur != null) {
+			res += ", " + cur.data;
+			cur = cur.next;
+		}
+		res += "]";
+		return res;
+	}
+
+	public String getSize() {
+		return "" + this.size;
+	}
+	
+}

@@ -1,0 +1,19 @@
+
+public class Graph {
+	private LinkedList[] adj;
+	private boolean[] visited;
+	
+	Graph(LinkedList[] adj) {
+		this.adj = adj;
+		this.visited = new boolean[adj.length];
+	}
+	
+	public void DFS() {
+		for(int i = 0; i < this.adj.length; i++) {
+			visited[i] = false;
+		}
+		for(int j = 0; j < this.adj.length; j++) {
+			if(visited[j] == false) this.graph_DFS(adj[j]);
+		}
+	}
+}

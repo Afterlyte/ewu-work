@@ -1,0 +1,36 @@
+CSCD 330 - Computer Networks
+Midterm, Winter 2021
+Ian Kaiserman
+
+1.Go to the Electronic Freedom Foundation (EFF)website. The link is to their Take Action area:EFF Take Action Page. You are to read some of the Take Action items and choose one that interests you to learn more about. (Take action if you choose.) Write a paragraph (or two) about the issue and your thoughts about it. Also, research a bit about the EFF, what it is and what they do. Write a few sentences to let me know that you know the purpose of the EFF.
+
+A. 
+
+2.If the current TCPestimatedround-trip time, EstimatedRTT, is currently 30 msec and the following acknowledgements come in after 26, 32, and 24 msec, respectively, what is the new EstimatedRTTvalue? What should the timer duration be for the next segment to be sent? (Use the typical coefficient values given in the lecturefor your computation.Showing your work may allow partial credit to be given.)
+
+3.Suppose that the roundtrip delay between sender and receiver is constant and known to the sender. Would a timer still be necessary in protocol RDT3.0 assuming packets can be lost? Explain.
+
+4.Some cybersquatters have registered domain names that are misspellings of common corporate sites, for example, www.microsfot.com. Make a list of at least five such domains.
+
+5.What are the five layers in the Internet protocol stack? For each of these layers, what are the principal responsibilities of each of these layers?
+
+6.The following questions can pretty much be found in the lecturenotes. You can search for the answers if needed. If you use an answer from the Internet, please site the source of the answer.
+	a.What is an ephemeral port? What port number range is typically defined for these ports?
+	b.Briefly list the differences between TCP and UDP.
+	c.Show code to create an input stream to a Java Socket.
+	d.Show code to create an output stream to a Java Socket.
+	e.What does the following snippet of code do?System.out.println(InetAddress.getLocalHost().getHostAddress());
+	
+7.Write a pseudocode algorithm that describes the receiverside of RDT 3.0. Assume all the method/function calls needed are already defined. Which calls should be blocking (that is, not returning until some external stimulus is received)?
+
+8.Consider a reliable data transfer protocol that uses only negative acknowledgements. Suppose sender sends data only infrequently. Would a NAK only protocol be preferable to a protocol that uses ACK's? Why? Now, suppose the sender has a lot of data to send and the end-to-end connection experiences a few losses. Now, would a NAK-only protocol be preferable to a protocol that uses ACK's? Why?
+
+9.What are two differences between HTTP/2 and HTTP 1.1?
+
+10.Give a real-world analogy for transport-layermultiplexing and transport-layerdemultiplexingthat does not rely on mail or letters.
+
+11.Suppose Alice, with a Web-based email account (such as Hotmail or gmail), sends a message to Bob, who accesses his mail from his mail server using POP3. Discuss how the message gets from Alice's host to Bob's host. Be sure to list the series of protocols (not below the transport layer) that are used to move the message between the two hosts.
+
+12.List two advantages and two disadvantages of having international standards for network protocols.
+
+13.Sloth Bank wants to make online banking easy for its lazy customers, so after a customer signs up and is authenticated by a password, the bank returns a cookie containing a customer ID number.In this way, the customer does not have to identify himself or type a password on future visits to the online bank. What do you think of this idea? Will it work? Is it a good idea?

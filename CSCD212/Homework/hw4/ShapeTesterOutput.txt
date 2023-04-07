@@ -1,0 +1,30 @@
+
+UNSORTED
+
+Triangle area: 12.5
+Triangle area: 6.0
+Triangle area: 31.5
+Square area: 25.0
+Square area: 49.0
+Square area: 36.0
+Rectangle area: 32.0
+Rectangle area: 45.0
+Rectangle area: 6.0
+Circle area: 78.53981633974483
+Circle area: 50.26548245743669
+Circle area: 28.274333882308138
+
+SORTED
+
+Circle area: 28.274333882308138
+Circle area: 50.26548245743669
+Circle area: 78.53981633974483
+Rectangle area: 6.0
+Rectangle area: 32.0
+Rectangle area: 45.0
+Square area: 25.0
+Square area: 36.0
+Square area: 49.0
+Triangle area: 6.0
+Triangle area: 12.5
+Triangle area: 31.5

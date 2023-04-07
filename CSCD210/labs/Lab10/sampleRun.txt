@@ -1,0 +1,47 @@
+ now
+ is
+ the
+ time
+ for
+ all
+ good
+ students
+ to
+ come
+ to the 
+ aid
+ of their university.
+ Please enter the name of the input file input.txt
+ Please enter the name of the input file inputText.txt
+ Stuart
+ Steiner
+ Tom
+ Capaul
+ Dan
+ Tappan
+ Paul
+ Schimpf
+ Please enter the name of the input file inputText.txt
+ Stuart
+ Steiner
+ Tom
+ Capaul
+ Dan
+ Tappan
+ Paul
+ Schimpf
+ Please enter the name of the output file output.txt
+ now
+is
+the
+time
+for
+all
+good
+students
+to
+come
+to the 
+aid
+of their university.
+ 

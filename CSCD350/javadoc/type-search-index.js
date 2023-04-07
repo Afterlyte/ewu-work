@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"cs350s21task2","l":"Airplane"},{"l":"All Classes","u":"allclasses-index.html"},{"p":"cs350s21task2","l":"Mover"}];updateSearchResults();

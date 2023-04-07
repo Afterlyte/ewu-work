@@ -1,0 +1,7 @@
+define sensor depth DEPTH1 with trigger depth -300
+define munition depth_charge CHARGE1 with fuze DEPTH1
+define ship SHIP1 with munition (CHARGE1)
+create actor MY_SHIP1 from SHIP1 at 49*39'31#/117*25'34#/0 with course 0 speed 5
+set MY_SHIP1 load munition CHARGE1
+@wait 5
+set MY_SHIP1 deploy munition MY_SHIP1.CHARGE1.1

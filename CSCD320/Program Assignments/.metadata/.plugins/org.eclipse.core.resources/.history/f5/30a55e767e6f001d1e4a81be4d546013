@@ -1,0 +1,20 @@
+// Author: Ian Kaiserman
+
+// Graph object for storing various information and functions for graph representation
+public class Graph {
+	
+	
+	// Constructor for Graph object (takes Linked List array)
+	Graph(LinkedList[] adj) {
+		
+	}
+	
+	public void dijkstra(int s) {
+		for(int i = 0; i < )
+	}
+	
+	// Returns the topological order of the graph stored in a Linked List
+	public LinkedList getTopoSort() {
+		return this.topoSort;
+	}
+}

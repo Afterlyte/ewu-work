@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"lab6.cscd211inheritance","l":"Accountant"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"lab6.cscd211lab6","l":"CSCD211Lab6"},{"p":"lab6.cscd211inheritance","l":"Employee"},{"p":"lab6.cscd211inheritance","l":"Lawyer"},{"p":"lab6.cscd211inheritance","l":"Programmer"}]

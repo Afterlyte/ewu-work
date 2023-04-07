@@ -1,0 +1,5 @@
+To run the server and web application:
+
+1. Open terminal and run "php -S localhost:8000"
+2. Open web browser and enter "localhost:8000" in the address bar
+3. Use the application from there

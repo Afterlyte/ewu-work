@@ -1,0 +1,228 @@
+#include <stdbool.h>
+#include <stdint.h>
+#include <inc/hw_memmap.h>
+#include <driverlib/sysctl.h>
+#include <driverlib/gpio.h>
+#include <driverlib/systick.h>
+#include <inc/hw_nvic.h>
+#include <driverlib/interrupt.h>
+#include <driverlib/timer.h>
+#include <driverlib/adc.h>
+
+#define NVIC_ST_CURRENT_R       (*((volatile uint32_t *)0xE000E018))
+#define NVIC_ST_RELOAD_R       (*((volatile uint32_t *)0xE000E014))
+#define NVIC_ST_CTRL_R       (*((volatile uint32_t *)0xE000E010))
+
+int mode = 0;
+int digit = 0;
+uint32_t data0 = 0;
+uint32_t data1 = 0;
+int psia = 0;
+int kel = 0;
+int temp = 0;
+int density = 0;
+int timerC = 5;
+
+void configureSysTick(void) {
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC0);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC1);
+    NVIC_ST_CTRL_R = 0x0;
+    NVIC_ST_RELOAD_R = 160000;
+    NVIC_ST_CURRENT_R = 0x0;
+    NVIC_ST_CTRL_R = 0x00000005;
+}
+
+void sysTick_delay(void) {
+    NVIC_ST_RELOAD_R = 160000;
+    NVIC_ST_CURRENT_R = 0x0;
+    while((NVIC_ST_CTRL_R&0x00010000)==0) {
+        ;
+    }
+}
+
+void displayOnes(int ones) {
+    GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 0);
+    GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, ones);
+    GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 2);
+}
+
+void displayTens(int tens) {
+    GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 0);
+    if(kel >= 10) GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, tens);
+    else GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 15);
+    GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 4);
+}
+
+void displayHundreds(int hundreds) {
+    GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 0);
+    if(kel >= 100) GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, hundreds);
+    else GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 15);
+    GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 8);
+}
+
+void display(int val) {
+    int ones = val % 10;
+    int tens = (val % 100 - ones) / 10;
+    int hundreds = (val - (tens * 10) - ones) / 100;
+    switch(digit) {
+    case 0:
+        displayOnes(ones);
+        digit = 1;
+        break;
+    case 1:
+        displayTens(tens);
+        digit = 2;
+        break;
+    case 2:
+        displayHundreds(hundreds);
+        digit = 0;
+    }
+}
+
+void Timer0IntHandler(void) {
+    TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+    TimerIntDisable(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+    if(timerC > 0) {
+        timerC--;
+    }
+    else {
+        mode = 0;
+    }
+    TimerIntEnable(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+}
+
+void Timer1IntHandler(void) {
+    TimerIntClear(TIMER1_BASE, TIMER_TIMA_TIMEOUT);
+    TimerIntDisable(TIMER1_BASE, TIMER_TIMA_TIMEOUT);
+    switch(mode) {
+    case 0:
+        display(density);
+        break;
+    case 1:
+        display(psia);
+        break;
+    case 2:
+        display(temp);
+        break;
+    }
+    TimerIntEnable(TIMER1_BASE, TIMER_TIMA_TIMEOUT);
+}
+
+void SW1IntHandler(void) {
+    GPIOIntClear(GPIO_PORTF_BASE, GPIO_PIN_4);
+    GPIOIntDisable(GPIO_PORTF_BASE, GPIO_PIN_4);
+    sysTick_delay();
+    timerC = 5;
+    switch(mode) {
+    case 0:
+        mode = 1;
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 2);
+        break;
+    case 1:
+        mode = 2;
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 8);
+        break;
+    case 2:
+        mode = 0;
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 4);
+        break;
+    }
+    GPIOIntEnable(GPIO_PORTF_BASE, GPIO_PIN_4);
+}
+
+void ADC1IntHandler(void) {
+    ADCIntDisable(ADC1_BASE, 3);
+    ADCIntClear(ADC1_BASE, 3);
+    ADCSequenceDataGet(ADC1_BASE, 3, &data1);
+    ADCIntEnable(ADC1_BASE, 3);
+    ADCProcessorTrigger(ADC1_BASE, 3);
+
+}
+
+void ADC0IntHandler(void) {
+    ADCIntDisable(ADC0_BASE, 3);
+    ADCIntClear(ADC0_BASE, 3);
+    ADCSequenceDataGet(ADC0_BASE, 3, &data0);
+    ADCIntEnable(ADC0_BASE, 3);
+    ADCProcessorTrigger(ADC0_BASE, 3);
+
+}
+
+void configureADCs(void) {
+
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_ADC0));
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_ADC1));
+    //GPIOPinTypeADC(GPIO_PORTB_BASE, GPIO_PIN_5);
+    //GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_5);
+    ADCSequenceConfigure(ADC0_BASE, 3, ADC_TRIGGER_PROCESSOR, 0);
+    ADCSequenceConfigure(ADC1_BASE, 3, ADC_TRIGGER_PROCESSOR, 0);
+    ADCSequenceStepConfigure(ADC0_BASE, 3, 0, ADC_CTL_IE | ADC_CTL_END | ADC_CTL_CH11);
+    ADCSequenceStepConfigure(ADC1_BASE, 3, 0, ADC_CTL_IE | ADC_CTL_END | ADC_CTL_CH8);
+    ADCHardwareOversampleConfigure(ADC0_BASE, 64);
+    ADCHardwareOversampleConfigure(ADC1_BASE, 64);
+    __asm volatile (" MOVW R0, #0x8038\n\t"
+            "MOVT R0, #0x4003\n\t"
+            "MOV R1, #0x40\n\t"
+            "STR R1, [R0]\n\t");
+    ADCSequenceEnable(ADC0_BASE, 3);
+    ADCSequenceEnable(ADC1_BASE, 3);
+    ADCIntRegister(ADC0_BASE, 3, ADC0IntHandler);
+    ADCIntRegister(ADC1_BASE, 3, ADC1IntHandler);
+    ADCIntEnable(ADC0_BASE, 3);
+    ADCIntEnable(ADC1_BASE, 3);
+    ADCProcessorTrigger(ADC0_BASE, 3);
+    ADCProcessorTrigger(ADC1_BASE, 3);
+}
+
+void configureTimers(void) {
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER0);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER1);
+    TimerConfigure(TIMER0_BASE, TIMER_CFG_PERIODIC);
+    TimerConfigure(TIMER1_BASE, TIMER_CFG_PERIODIC);
+    TimerClockSourceSet(TIMER0_BASE, TIMER_CLOCK_SYSTEM);
+    TimerClockSourceSet(TIMER1_BASE, TIMER_CLOCK_SYSTEM);
+    TimerLoadSet(TIMER0_BASE, TIMER_A, 16000000);
+    TimerLoadSet(TIMER1_BASE, TIMER_A, 88888);
+    TimerIntRegister(TIMER0_BASE, TIMER_A, Timer0IntHandler);
+    TimerIntRegister(TIMER1_BASE, TIMER_A, Timer1IntHandler);
+    TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+    TimerIntClear(TIMER1_BASE, TIMER_TIMA_TIMEOUT);
+    TimerIntEnable(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+    TimerIntEnable(TIMER1_BASE, TIMER_TIMA_TIMEOUT);
+    TimerEnable(TIMER0_BASE, TIMER_A);
+    TimerEnable(TIMER1_BASE, TIMER_A);
+}
+
+void configurePins(void) {
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOE);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+    GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_4);
+    GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3);
+    GPIOPinTypeGPIOOutput(GPIO_PORTD_BASE, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3);
+    GPIOPinTypeGPIOOutput(GPIO_PORTE_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3);
+    GPIOPadConfigSet(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_STRENGTH_4MA, GPIO_PIN_TYPE_STD_WPU);
+    GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, 4);
+    GPIOIntRegister(GPIO_PORTF_BASE, SW1IntHandler);
+    GPIOIntTypeSet(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_FALLING_EDGE);
+    GPIOIntClear(GPIO_PORTF_BASE, GPIO_PIN_4);
+    GPIOIntEnable(GPIO_PORTF_BASE, GPIO_PIN_4);
+}
+
+/**
+ * main.c
+ */
+int main(void)
+{
+    configureSysTick();
+    configurePins();
+    configureTimers();
+    configureADCs();
+    IntMasterEnable();
+    while(1) {
+        psia = (data0 * 100)/4095;
+        temp = (data1 * 100)/4095;
+        kel = temp - 40 + 273;
+        density = psia / (0.17065 * kel) * 100;
+    }
+}

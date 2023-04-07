@@ -1,0 +1,6 @@
+
+public class MinHeap {
+	private int[][] minHeap;
+	private int heapSize;
+	public int curHeapSize{ get; set;};
+}

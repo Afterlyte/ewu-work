@@ -1,0 +1,28 @@
+
+public class Main {
+
+	static class Node {
+		int data;
+		Node left;
+		Node right;
+		
+		Node(int data) {
+			this.data = data;
+			this.left = null;
+			this.right = null;
+		}
+	};
+	
+	static void print(Node parent) {
+		org.w3c.dom.Node curr = parent;
+		while(cur != null) {
+			System.out.print(curr.data + " ");
+			curr = curr.right;
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

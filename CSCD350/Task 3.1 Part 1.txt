@@ -1,0 +1,1 @@
+Is there something you can point me to for figuring out how to enforce an efficient cap on the heading, taking into account the concept of a compass (reaching the other side of the compass again)? My current solution for it is around 20-25 lines of code and still has a couple holes.

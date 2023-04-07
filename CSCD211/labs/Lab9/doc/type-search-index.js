@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"lab9.cscd211recursion","l":"CSCD211Count5s"},{"p":"lab9.cscd211lab9","l":"CSCD211Lab9"}]

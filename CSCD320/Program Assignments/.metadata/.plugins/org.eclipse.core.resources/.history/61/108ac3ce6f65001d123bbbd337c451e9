@@ -1,0 +1,94 @@
+public class LinkedList {
+	
+	private class Node {
+		private Object data;   //Assume data implemented Comparable
+		private Node next, prev;
+		private Node(Object data, Node pref, Node next)
+		{
+			this.data = data;
+			this.prev = pref;
+			this.next = next;
+		}
+	}
+
+	private Node head;
+	private int size;
+
+	public LinkedList() {
+		this.head = new Node(null, null, null );
+		this.head.next = this.head;
+		this.head.prev=this.head;
+		this.size = 0;
+	}
+
+	
+	public void addFirst(Object data) {
+		Node nn = new Node(data, this.head, this.head.next);
+		this.head.next.prev = nn;
+		this.head.next = nn;
+		this.size ++;
+	}
+	
+	public void addLast(Object data) {
+		if(this.size == 0) {
+			this.addFirst(data);
+		}
+		else {
+			Node cur = this.head.prev;
+			Node nn = new Node(data, cur, this.head);
+			this.head.prev = nn;
+			cur.next = nn;
+			this.size ++;
+		}
+	}
+	
+	public Object removeFirst() {
+		Node cur = this.head.next;
+		cur.prev.next = cur.next;
+		cur.next.prev = cur.prev;
+		this.size--;
+		return cur.data;
+	}
+	
+	public void addOrdered(Object data) {
+		Node cur = this.head.next, prev = this.head;
+		Node nn = new Node(data, null, null);
+		while(cur != this.head && ((Comparable)cur.data).compareTo((Comparable)data) < 0) {
+			prev = cur;
+			cur = cur.next;
+		}
+		nn.next = cur;
+		nn.prev = prev;
+		prev.next = nn;
+		cur.prev = nn;
+		this.size++;
+	}
+	
+	public void InsertionSort() {
+		LinkedList newList = new LinkedList();
+		Node cur = this.head.next;
+		while(cur != this.head) {
+			newList.addOrdered(cur.data);
+			cur = cur.next;
+		}
+		this.head = newList.head;
+	}
+	
+	@Override
+	public String toString() {
+		Node cur = this.head.next;
+		String res = "[" + cur.data;
+		cur = cur.next;
+		while(cur != this.head) {
+			res += ", " + cur.data;
+			cur = cur.next;
+		}
+		res += "]";
+		return res;
+	}
+
+	public String getSize() {
+		return "" + this.size;
+	}
+	
+}

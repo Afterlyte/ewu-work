@@ -1,0 +1,93 @@
+
+public class MinHeap {
+	
+	private int[][] minHeap;
+	private int heapSize;
+	
+	public MinHeap(int size, int[] heap) {
+		this.minHeap = new int[heap.length][2];
+		for(int i = 1; i < this.minHeap.length; i++) {
+			this.minHeap[i] = heap[i-1];
+		}
+		this.heapSize = size;
+	}
+	
+	public void buildMinHeap() {
+		this.heapSize = this.minHeap.length - 1;
+		for(int i = (int) Math.floor(this.minHeap.length/2); i >= 1; i--) minHeapify(i);
+	}
+	
+	public void minHeapify(int i) {
+		if(i*2+1 <= heapSize) {
+			if(this.minHeap[i] < this.minHeap[i*2] && this.minHeap[i] < this.minHeap[i*2+1]) {
+				return;
+			}
+			else if(this.minHeap[i*2] < this.minHeap[i*2+1]) {
+				int temp = this.minHeap[i];
+				this.minHeap[i] = this.minHeap[i*2];
+				this.minHeap[i*2] = temp;
+				minHeapify(i*2);
+			}
+			else {
+				int temp = this.minHeap[i];
+				this.minHeap[i] = this.minHeap[i*2+1];
+				this.minHeap[i*2+1] = temp;
+				minHeapify(i*2+1);
+			}
+		}
+		else if(i*2 <= heapSize) {
+			if(this.minHeap[i*2] < this.minHeap[i]) {
+				int temp = this.minHeap[i];
+				this.minHeap[i] = this.minHeap[i*2];
+				this.minHeap[i*2] = temp;
+				minHeapify(i*2);
+			}
+		}
+		else {
+			return;
+		}
+		
+	}
+	
+	public void heapSort() {
+		buildMinHeap();
+		for(int j = this.minHeap.length - 1; j >= 2; j--) {
+			int temp = this.minHeap[1];
+			this.minHeap[1] = this.minHeap[j];
+			this.minHeap[j] = temp;
+			heapSize--;
+			minHeapify(1);
+		}
+	}
+	
+	public int extractMin() {
+		if(this.heapSize >= 1) {
+			int min = this.minHeap[1];
+			this.minHeap[1] = this.minHeap[this.heapSize];
+			this.heapSize--;
+			this.minHeapify(1);
+			return min;
+		}
+		else {
+			throw new IndexOutOfBoundsException("Min Heap is empty, cannot extract max");
+		}
+	}
+
+	public int[] getMinHeap() {
+		return minHeap;
+	}
+
+	public void setMinHeap(int[] minHeap) {
+		this.minHeap = minHeap;
+	}
+
+	public int getHeapSize() {
+		return heapSize;
+	}
+
+	public void setHeapSize(int heapSize) {
+		this.heapSize = heapSize;
+	}
+	
+	
+}

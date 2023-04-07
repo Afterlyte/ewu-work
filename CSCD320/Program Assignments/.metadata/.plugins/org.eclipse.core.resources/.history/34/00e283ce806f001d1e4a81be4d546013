@@ -1,0 +1,25 @@
+// Author: Ian Kaiserman
+
+// Graph object for storing various information and functions for graph representation
+public class Graph {
+	private LinkedList[] adj;
+	private int[] parents;
+	private int[] distance;
+	
+	// Constructor for Graph object (takes Linked List array)
+	Graph(LinkedList[] adj) {
+		this.adj = adj;
+		this.parents = new int[adj.length];
+		this.distance = new int[adj.length];
+	}
+	
+	public void dijkstra(int s) {
+		for(int i = 0; i < this.adj.length; i++) {
+			this.distance[i] = Integer.MAX_VALUE;
+			this.parents[i] = -1;
+		}
+		this.distance[s] = 0;
+		LinkedList set = new LinkedList();
+	}
+	
+}

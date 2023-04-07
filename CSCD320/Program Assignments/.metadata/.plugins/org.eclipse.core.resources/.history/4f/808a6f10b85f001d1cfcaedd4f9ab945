@@ -1,0 +1,59 @@
+package prog3;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FastMatrixMulti {
+	
+	static int[][] m;
+	static int[][] s;
+	
+	private static int findMatrixChain(int[] dims, int n) {
+		
+		for(int i = 0; i < n; i++) {
+			m[i][i] = 0;
+		}
+		for(int l = 1; l < n; l++) {
+			for(int i = 0; i < n - l + 1; i++) {
+				int j = i + l - 1;
+				m[i][j] = -1;
+				for(int k = i; k < j - 1; k++) {
+					int q = m[i][k] + m[k+1][j] + dims[i-1]*dims[k]*dims[j];
+					if(q < m[i][j] && q != -1) {
+						m[i][j] = q;
+						s[i][j] = k;
+					}
+				}
+			}
+		}
+		return 0;
+	}	
+
+	public static void main(String[] args) {
+		File input = new File(args[0]);
+		Scanner lines = null;
+		Scanner fscan = null;
+		int count = 0;
+		try {
+			fscan = new Scanner(input);
+			lines = new Scanner(input);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		while(lines.hasNextInt()) {
+			count++;
+			lines.nextInt();
+		}
+		int[] dims = new int[count];
+		for(int i = 0; i < dims.length; i++) {
+			dims[i] = fscan.nextInt();
+		}
+		m = new int[dims.length - 1][dims.length - 1];
+		s = new int[dims.length - 1][dims.length - 1];
+		int cost = findMatrixChain(dims, dims.length - 1);
+	}
+
+
+
+}

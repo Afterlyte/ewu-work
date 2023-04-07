@@ -1,0 +1,22 @@
+// Author: Ian Kaiserman
+
+import java.io.File;
+import java.util.Scanner;
+
+public class Richest {
+
+	static int[] list = new int[10000];
+	
+	static void minHeapify(int i) {
+		
+	}
+	
+	public static void main(String[] args) {
+		File file = new File(args[0]);
+		Scanner fscan = new Scanner(file);
+		for(int i = 0; i < 10000 && fscan.hasNextInt(); i++) {
+			list[i] = fscan.nextInt();
+		}
+	}
+
+}

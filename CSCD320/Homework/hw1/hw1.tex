@@ -1,0 +1,494 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{graphics,epsfig,color}
+\usepackage{wrapfig}
+
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{amsmath,amsthm,amssymb}
+%\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{qtree}
+\usepackage{subfigure}
+\usepackage{url}
+
+
+
+%for code from latexdraw
+%\usepackage[usenames,dvipsnames]{pstricks}
+%\usepackage{epsfig}
+%\usepackage{pst-grad} % For gradients
+%\usepackage{pst-plot} % For axes
+
+
+\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{proposition}{Proposition}[theorem]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{lemma}{Lemma}[section]
+%\newtheorem{claim}{Claim}[section]
+\newtheorem{problem}{Problem}
+%\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{observation}{Observation}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{openproblem}{Open Problem}[section]
+\newtheorem{fact}{Fact}[section]
+%\newcommand{\qedsymb}{\hfill{\rule{2mm}{2mm}}}
+
+\newcommand{\qedsymb}{\hfill{\rule{2mm}{2mm}}}
+\newenvironment{proofsketch}{\begin{trivlist}
+\item[\hspace{\labelsep}{\noindent Proof Sketch: }]
+}{\qedsymb\end{trivlist}}
+
+
+
+%the following few lines until usepackage{algorithm2e} is to avoid the
+%conflicts of algorithm2e with other packages.
+\makeatletter
+\newif\if@restonecol
+\makeatother
+\let\algorithm\relax
+\let\endalgorithm\relax
+%\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+
+%\newenvironment{proof}{\begin{trivlist}
+%\item[\hspace{\labelsep}{\bf\noindent Proof: }]}{\qedsymb\end{trivlist}}
+%\newcommand{\qed}{\hfill\rule{2mm}{2mm}}
+
+\newcommand{\remove}[1]{}
+
+
+
+%--------------------------------
+
+
+\begin{document}
+
+\begin{center}
+  {\LARGE CSCD320 Homework1}
+
+\bigskip 
+
+{\Large Ian Kaiserman, EWU ID: 00867173}
+
+\end{center}
+
+\bigskip 
+
+\begin{problem}[5 points]
+\label{prob:1}
+Based on your learning from the CSCD300 Data Structures course, describe your
+understanding of the connection and difference between the “data structures” and “algorithms”. Say your
+opinions in your own language. Any reasonable opinion is welcome.
+\end{problem}
+
+
+%---------------------------------------
+
+\begin{problem}[10 points]
+\label{prob:2}
+Show: $5000n^2+n\log n=O(n^2)$
+\end{problem}
+
+
+
+%---------------------------------------
+
+\begin{problem}[10 points]
+\label{prob:3}
+Show: $5000n^2+n\log n=o(n^3)$
+\end{problem}
+
+
+
+
+\begin{problem}[10 points]
+\label{prob:4}
+Show: $5000n^2+n\log n=\Omega(n^2)$
+\end{problem}
+
+
+
+%---------------------------------------
+
+
+\begin{problem}[10 points]
+\label{prob:5}
+Show: $5000n^2+n\log n=\omega(n)$
+\end{problem}
+
+
+
+%---------------------------------------
+\begin{problem}[15 points]
+\label{prob:6}
+Let $f(n)$ be a nonnegative increasing function. Is $f(n) = \Theta(f(2n))$ always true ?
+If yes, prove it; otherwise, give a counter example. Hint: try many different such possible functions for f.
+\end{problem}
+
+
+
+%---------------------------------------
+
+\begin{problem}[25 points]
+\label{prob:7}
+The idea of Merge Sort that we have discussed in the class is to split the input
+sequence of size n into two subsequences of each sized n/2, recursively sort each subsequence, and merge
+the two sorted subsequences into a sorted version of the original sequence. Now, someone proposed the
+following new idea: why don’t we split the input sequence into more subsequences of smaller size, so that
+the algorithm can reach the exit condition (which is when the sequence size becomes 1) more quickly and
+thus make the algorithm faster? Your job:
+
+\begin{enumerate}
+\item  Change the algorithm and give the pseudocode for this proposed new Merge Sort, where the input
+sequence is divided into 4 subsequences of each sized $n/4$.
+
+\item Analyze the time complexity of this new algorithm and present the result using the $\Theta$ notation.
+
+\item  Is this new algorithm asymptotically faster than the one in the textbook ? Justify your answer.
+
+\item  Can this algorithm be faster in practice than the one in the textbook ? Justify your answer.
+
+\item  Let’s think of the extreme case. We split the input sequence into $n$ subsequences of each sized just 1.
+Can this algorithm be asymptotically faster than the one in the textbook ? Justify your answer.
+
+\item  Do you get any insight why the textbook Merge Sort only splits the input sequence into two halves ?
+\end{enumerate}
+\end{problem}
+
+
+%---------------------------------------
+
+
+\begin{problem}[15 points total; 5 points for each algorithm]
+\label{prob:8}
+Search and learn three existing algorithms that
+use the divide-conquer strategy. For each algorithm, in your own language, concisely and clearly describe:
+
+\begin{enumerate}
+\item the problem statement
+
+\item the algorithmic idea in the solution (don’t just copy the code or the text on the webpage to me)
+
+\item the time complexity
+
+\item the condition, on which the worst-case running time appears.
+
+\item the source of your finding. For example, the url of the webpages, the title and page of a book, the
+title/author/year of an article, etc.
+\end{enumerate}
+
+Note: If you just copy and paste or with small modification without your own understanding, you will
+get zero for this problem.
+\end{problem}
+
+%\end{document}
+
+\newpage
+
+%---------------------------------------
+
+\bigskip
+\noindent{\bf Solution for Problem~\ref{prob:1}.}
+
+From my understanding, data structures are the ways in which data is stored and expressed, 
+while algorithms are the ways in which said data is manipulated and used for certain purposes. 
+data structures can influence how algorithms are written depending on their needs and how it is structured, 
+and algorithms often directly change data contained in data structures.
+%---------------------------------------
+\bigskip
+
+\noindent{\bf Solution for Problem~\ref{prob:2}.}
+
+
+\begin{proof} For a function to be in the family of the time complexity, there exists positive constants $c$ and $n_0$ such that $0\leq f(n)\leq cg(n)$ for all $n\geq n_0$ (loose upper bound)
+
+$f(n)=5000n^2+n\log n$
+
+$g(n)=n^2$
+
+Find c and $n_0$ such that when $n\geq n_0, 0\leq 5000n^2+n\log n\leq cn^2$
+
+$5000+\frac{\log n}{n}\leq c$
+
+Let $c=5001$ and $n_0=5$
+
+$\frac{\log n}{n}\leq 1$
+
+When $n\geq n_0$ starting from 5, the left side gets closer and closer to 0, making the inequality true and showing that $O(n^2)$ is correct for the polynomial.
+\end{proof}
+
+%---------------------------------------
+\bigskip
+
+\noindent{\bf Solution for Problem~\ref{prob:3}.}
+
+\begin{proof} For a function to be in the family of the time complexity, there must exist a positive constant $n_0$ for any positive constant c, such that $0\leq f(n)<cg(n)$ for all $n\geq n_0$ (strictly loose upper bound)
+
+$f(n)=5000n^2+n\log n$
+
+$g(n)=n^3$
+
+Show that for any positive constant c, there exists a positive constant $n_0$ such that when $n\geq n_0$, $0\leq f(n)<cg(n)$.
+
+$5000n^2+n\log n<cn^3$
+
+$\frac{5000}{n}+\frac{\log n}{n^2}<c$
+
+As n becomes larger, the entire left side approaches 0.
+
+Therefore, for any positive constant c, there always exists a large enough $n_0$ such that when $n\geq n_0$, the inequality is true.
+\end{proof}
+
+%---------------------------------------
+\bigskip
+
+\noindent{\bf Solution for Problem~\ref{prob:4}.}
+
+\begin{proof} For a function to be in the family of the time complexity, there exists positive constants $c$ and $n_0$ such that $0\leq cg(n)\leq f(n)$ for all $n\geq n_0$ (loose lower bound)
+
+$f(n)=5000n^2+n\log n$
+
+$g(n)=n^2$
+
+Find $c$ and $n_0$ such that when $n\geq n_0, 0\leq cn^2\leq 5000n^2+n\log n$
+
+$c\leq5000+\frac{\log n}{n}$
+
+Let $c=5000$ and $n_0=200$
+
+$0\leq\frac{\log n}{n}$
+
+For all $n\geq n_0$, the right side gets closer to 0 but never truely reaches 0, making it always greater than or equal to the left side, proving the inequality true.
+
+\end{proof}
+
+%---------------------------------------
+\bigskip
+
+\noindent{\bf Solution for Problem~\ref{prob:5}.}
+
+\begin{proof} For a function to be in the family of the time complexity, there must exist a positive constant $n_0$ for any positive constant c, such that $0\leq cg(n)<f(n)$ for all $n\geq n_0$ (strictly loose lower bound)
+
+$f(n)=5000n^2+n\log n$
+
+$g(n)=n$
+
+Show that for any positive constant c, there exists a positive constant $n_0$ such that when $n\geq n_0$, $0\leq cg(n)<f(n)$.
+
+$cn<5000n^2+n\log n$
+
+$c<5000n+\log n$
+
+Since both sides share the same largest degree (c and n, degree of 1), for every possible positive constant c, a positive constant $n_0$ can be chosen to make the right side larger, and therefore when $n\geq n_0$, the inequality is always true.
+\end{proof}
+
+%---------------------------------------
+\bigskip
+
+\noindent{\bf Solution for Problem~\ref{prob:6}.}
+
+The statement is false.
+
+\begin{proof} For $f(n)$ to be part of the family of functions of $\Theta f(2n)$, The upper and lower bounds must be strictly tight on both sides for all $f(n)$.
+
+However, in the case of $f(n)=c^n$ where c is any natural number, that makes $f(2n)=c^{2n}$ which has a different degree than $f(n)$ and therefore a different growth rate, making the use of $\Theta$ incorrect.
+\end{proof}
+
+%---------------------------------------
+\bigskip
+
+\noindent{\bf Solution for Problem~\ref{prob:7}.}
+
+\begin{enumerate}
+\item Pseudocode for $n/4$ merge sort algorithm
+\begin{verbatim}
+merge_sort(A, p, t) {
+  if(p<s) {
+    quarter = (t-p)/4
+    q = floor(p+quarter)
+    r = floor(p+2quarter)
+    s = floor(p+3quarter)
+
+    merge_sort(A, p, q)
+    merge_sort(A, q+1, r)
+    merge_sort(A, r+1, s)
+    merge_sort(A, s+1, t)
+
+    merge(A, p, q, r, s, t)
+  }
+}
+\end{verbatim}
+
+\newpage
+
+\item Looking at the pseudocode given above, each recursive merge sort call is called roughly $n/4$ times due to the array being split into 4 parts, and the merge call is still being called n times. Compared to the traditional merge sort, the visual tree is split into 4 pieces each time, which means instead of $2^x=n$ being the number of elements in the tree, it is now $4^x=n$. This converts into $\log _4n$. Each line in the tree still adds up to $cn$ because the number of items in each line of the tree increases by the same factor that each item is being divided by. Therefore, the resulting time complexity is $\Theta (n\log _4n)$.
+
+\item Yes, the new algorithm is asymtotically faster than the one in the text book. This is because base 4 logarithm grows at a slower rate than base 2, meaning the time spent grows less for the former than the latter as n gets larger.
+
+\item This algorithm can be faster in practice, especially for much larger array sizes. When the size of the input array gets extremely large, so does the gap between the base 2 and base 4 logarithm functions. This means the 4 way merge sort gets more efficient the larger n gets.
+
+\item In the extreme case, when the subsequences are very small, this is where this algorithm proves to be slower overall, and isn't faster asymptotically than the textbook example. This is because once the subsequences get smaller than size 4, the algorithm can't efficiently split the subarrays into 4 pieces, meaning it will end up checking the same subarrays several times. For example, when looking at a subarray from index 1 to 2, it will be recursively calling merge sort for the subarrays 1 to 1, 1 to 1, 2 to 2, 2 to 2, meaning there are two duplicate steps there. For much larger arrays, this is a large waste of time and memory when a typical merge sort would be much more efficient.
+
+\item The textbook Merge Sort splits into two halves because it is the simplest and most efficient way of using merge sort in ALL cases, not just smaller or larger arrays. It minimizes the amount of needless steps like the 4 way version has, while still having a relatively efficient design due to the nature of logarithm time complexity not causing an exponentially increasing number of steps.
+\end{enumerate}
+
+%---------------------------------------
+\bigskip
+
+\noindent{\bf Solution for Problem 8.}
+
+\begin{enumerate}
+\item QuickSort (I know this was mentioned in class, but I couldn't remember if I'd learned it or not, and even if I did it would be nice to get a refresher on it)
+
+\begin{itemize}
+\item Problem statement: Given an array of n numbers, sort the array in ascending order.
+
+\item Algorithmic idea: Starting with the original array, a "pivot" needs to be chosen from the list of numbers. One example is using the last element in the array. The array will be sorted by comparing each element to this pivot to determine which side of the pivot this element should be on (larger or smaller).
+
+The array is recursively split on the pivot element, and these two parts are sent to a "partition" function, which keeps selecting a pivot element and splitting accordingly until the subarrays only have one number. As the pivoting is one, unlike Merge Sort, all of the changes made to the order are done on the original array instead of a copy. Therefore, as the pivoting is done to divide elements to the left and right of the pivot, the array naturally sorts itself as it reaches these subarrays of one element. 
+
+\item Time complexity: The time complexity of Quick Sort varies based on the array input. This is because instead of always splitting the array into two even parts, the splitting here entirely depends on what the pivot is, meaning it could be split as few times as Merge Sort, or as many times as going over the entire list for every element. In the average case however, the splitting will look similar to merge sort (about the middle on average) and will similarly have a time complexity of $O(n\log n)$.
+
+\item As mentioned before, the worst case is that the entire list has to be analyzed for every element of the list. This is because it's possible that every time a pivot is analyzed, every single element needs to be moved to the other side of it. Therefore the worst case scenario time complexity is $O(n^2)$.
+
+\item Source: \url{https://www.geeksforgeeks.org/quick-sort/}
+\end{itemize}
+
+\item Binary Search (divide and conquer method)
+
+\begin{itemize}
+\item Problem statement: Given a sorted array of n numbers, and a particular number to find, return the location of the number being searched for.
+
+\item Algorithmic idea: a function is created that takes the sorted array, the number being searched for, and a low and high index. A middle point is found and compared to the search number. if found, return; if not, determine if it's on the left or right side of the middle element. Recursively call the same search function, this time using the corresponding side of the array as the low and high index points to search in. the search value will continue to be compared to the middle value of the subarray, and if it doesn't match it will be determined to be on the left or right side of the sorted array and it will be further divided.
+
+\item Time Complexity: The time complexity of this algorithm is similar to that of Merge Sort, but with one key difference. the muiltiplication of $\log n$ by $n$ is not necessary, because the second half of each subarray will never need to be searched. This is because the array is already sorted, so if the search value is less than or greater than the middle value, the left right side ONLY will need to be searched, respectively. Therefore, the time complexity is only $O(\log n)$.
+
+\item The worst case scenario for this algorithm is if the array has to be divided all the way until the subarray searched is of size 1. This only ends up having a time complexity of $O(\log n)$ which is the same as the general complexity of the algorithm, and much more tame than the previous example.
+
+\item Source: \url{https://www.geeksforgeeks.org/binary-search/}
+\end{itemize}
+
+\newpage
+
+\item Integer Multiplication
+
+\begin{itemize}
+\item Problem Statement: Given two positive integers of the same length, find the product of these integers.
+
+\item Algorithmic idea: A function takes both of the input integers, and splits the length of the integers in half. These 4 halves (2 for each integer) are sent recursively into the same function in two-digit multiplication style (bottom right*top right, bottom right*top left, bottom left*top right, bottom left*top left), continuously split until each input integer has a length of 1, where they are then multiplied together and returned. Once each recursive call has those set of 4 results, they are then multiplied by an exponent of 10 depending on the number of digits in the two numbers and added together, similar to what is done on paper when multiplying. Eventually these results make their way up the recursive tree and the final result is achieved.
+
+\item Time Complexity: The time complexity of this algorithm is $O(n^2)$, since each digit of the first number needs to be dealt with once for every digit of the second number.
+
+\item There isn't really a worst case scenario with this algorithm because the numbers need to be fully multiplied out no matter what, as that is the point of the algorithm
+
+\item Source: \url{https://www.cs.cmu.edu/~cburch/pgss99/lecture/0721-divide.html}
+\end{itemize}
+
+\end{enumerate}
+
+\end{document}
+
+%You can also use the {\bf following}. 
+%
+%\begin{verbatim}
+%dafda
+%dafdafdafda
+%  daljdlk 
+% jkalf jalj lk jlg jlkajg klg ;jsfg jsf 
+%j4l26j5i6,v5bb b53bu 63n j6b j
+%\end{verbatim}
+%
+%The {\em verbatim} macro will tell latex to output exactly what you
+%type, so it's a convienent way to let the output to be what you see as
+%what you have. So using verbatim might be another way to write your
+%pseudo code, but the bad thing is you cannot type those ``greek''
+%letters ......  
+%
+%\vspace*{+1cm}
+%
+%{\LARGE 
+%Play around with this sample, try different tricks/options/toys to see
+%the change in the output. Whenever you have a question, it's alwyas a
+%good idea to ask Google. You can also google search for
+%docs/videos/slides that teach how to use latex. 
+%}
+%
+%
+%
+%\bigskip 
+%
+%
+%Last note about including a picture. 
+%
+%\begin{verbatim}
+%You can save a figure in a pdf, jpg, or eps files, and use the command
+%\includegraphics{figfilename} to includge the figure (find the example
+%in this sample article). 
+%
+%If you use Linux/Mac and use command line to complile you latex file
+%to get the output pdf file. 
+%
+%1. if your figure file is in .pdf or .jpg, you have to use the command
+%
+%> pdflatex hw1.tex
+%
+%2. if your figure file is in a .eps file, then you have to type
+%commands:
+%
+%> latex hw1.tex
+%> dvipdf hw1.dvi
+%
+%
+%or (if you also want to get the hw.ps file as the by-product)
+%
+%> latex hw1.tex
+%> dvips hw1.dvi
+%> ps2pdf hw1.ps
+%
+%\end{verbatim}
+%
+%\newpage
+%
+%
+%About how to create a figure file, there are many tool for that. One
+%thing you should know is that you figure should have a tight bounding
+%box, meaning no wide empty area is left around the figure, so that
+%you won't have space wasted in your article.\\
+%
+%
+%Several example tools to create figs. \\
+%
+%1. use ppt to create the figure, print that particular slide into a
+%pdf file, open the pdf using FULL acrobat (acrobat reader does not
+%have this function), crop the figure are out (I remeber ``crop''
+%should be somewhere in the ``too'' menu item in the acrobat).  Then
+%save the cropped figure out as a new pdf file or eps file, depending
+%on your taste. \\
+%
+%2. several other tools on linux: xfig, latexdraw. I use latexdraw a
+%lot for my lecture slides. 
+%
+%If you use that latexdraw, you will be using the
+%mouse to create the picture on screen, LatexDraw will create the
+%``code'' of that picture, you only need to copy and paste those code
+%into your latex source code file. In other words, there is no
+%pdf/jgp/eps involved. If you want to reedit that file later, you can
+%create a new empty .tex file and copy those code in that tex file and
+%then import into latexdraw, which will display and let you re-edit
+%that picture. If you use latexdraw, some necessary package will need
+%to be included in your latex source file. Check out the details via
+%Google. 
+%
+%
+%3. you also find other tools that I don't know from google search.  
+%
+%
+%
+%
+%\end{document}
+%
+%
+
+

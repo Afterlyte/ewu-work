@@ -1,0 +1,73 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 ------------------testAddLast()----\
+\{A\}\
+\{A->B\}\
+\{A->B->null\}\
+\{A->B->null->C\}\
+-----------------------------\
+------------testRemoveFirst()------\
+\{apple->bad->null\}, removed:null\
+\{bad->null\}, removed:apple\
+\{null\}, removed:bad\
+\{\}, removed:null\
+java.lang.Exception: Exception: LinkedList is empty!\
+-----------------------------\
+----------------testContains()------\
+true\
+true\
+true\
+false\
+false\
+false\
+false\
+false\
+-----------------------------\
+----------------testRemove(Object)---\
+\{2:Morning->3:Abby->4:Tim->5:Tom->6:Tony\}\
+\{2:Morning->3:Abby->4:Tim->5:Tom->6:Tony\}\
+\{2:Morning->3:Abby->4:Tim->5:Tom\}\
+\{2:Morning->3:Abby->4:Tim->5:Tom\}\
+\{2:Morning->3:Abby->5:Tom\}\
+\{null->apple->bad->null\}\
+\{apple->bad->null\}\
+\{apple->bad\}\
+\{\}\
+-----------------------------\
+---------------Test RemoveAllCopies()---\
+\{B->A->A->A\}\
+\{A->A->A\}\
+\{\}\
+\{A\}\
+-----------------------------\
+-----------------testInterleave()---\
+\{null->1:Good->apple->2:Morning->bad->3:Abby->null->4:Tim->5:Tom->6:Tony\}\
+\{null->apple->bad->null\}\
+-----------------------------\
+--------------testAddIndex()------\
+\{A0->null->apple->bad->null\}\
+\{A0->null->apple->bad->null->A5\}\
+\{A0->null->apple->A3->bad->null->A5\}\
+\{B0\}\
+java.lang.IndexOutOfBoundsException: Index Passed in not valid!\
+-----------------------------\
+--------------testRemoveIndex()------\
+\{apple->bad->null\}\
+\{apple->bad\}\
+java.lang.IndexOutOfBoundsException: Provided index is out of bounds! 2\
+\{apple\}\
+\{\}\
+-----------------------------\
+--------------testGetIndex()------\
+null\
+apple\
+bad\
+null\
+java.lang.IndexOutOfBoundsException: Provided index is out of bounds! 4\
+4:Tim\
+-----------------------------}

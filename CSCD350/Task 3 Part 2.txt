@@ -1,0 +1,19 @@
+CSCD 350 Project Task 3.0 Part II: Requirements and Applicability
+
+Ian Kaiserman
+
+Inferred Requirements
+
+The airplane shall be able to change direction on a horizontal plane.
+The airplane shall be able to change speed and acceleration at varying rates.
+The airplane shall be capable of movement on all axes in a three-dimensional space.
+The airplane shall be able to turn on the Z axis at varying rates.
+
+Inferred Applicability
+
+Aircraft, Fighter - self-explanatory, a fighter aircraft operates very similarly to a commercial airplane.
+Aircraft, Bomber - same as Aircraft, Fighter.
+Battleship - some implementation of Mover, but is limited to movement in a 2D space so it would not benefit from things like vertical speed.
+Missile - missiles with any sort of guidance would benefit from the movement programming through 3D space.
+Submarine - movement through water in a 3D space is applicable here.
+Torpedo - similar to missiles, if torpedoes have a guidance system they would benefit from programmed movement through at least 2D space, or situationally 3D space.

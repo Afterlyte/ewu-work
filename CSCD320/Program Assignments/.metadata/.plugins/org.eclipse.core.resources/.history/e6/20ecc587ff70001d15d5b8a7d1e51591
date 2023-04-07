@@ -1,0 +1,22 @@
+
+public class MinHeap {
+	private int[][] minHeap;
+	private int heapSize;
+	private int capacity;
+	
+	public MinHeap(int n) {
+		this.capacity = n;
+		this.minHeap = new int[n][2];
+		this.heapSize = 0;
+	}
+	
+	public void insertKey(int[] key) {
+		int i = this.heapSize;
+		this.minHeap[i] = key;
+		this.heapSize++;
+		while(i != 0 && this.minHeap[i][1] < this.minHeap[i/2][1]) {
+			int[] temp = this.minHeap[i];
+			this.minHeap[i] = this.minHeap[i/2]
+		}
+	}
+}

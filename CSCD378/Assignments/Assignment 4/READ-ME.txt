@@ -1,0 +1,7 @@
+To set up the project space
+1. Open terminal where files are located
+2. Run "composer install"
+
+Once dependencies are installed, to run the program:
+1. Open terminal, or use existing window
+2. Run "php Main.php"

@@ -1,0 +1,46 @@
+******** Query 0 ********
+Crime_ID	Charge_Date
+10085		2008-09-02
+10086		2008-10-19
+10089		2008-10-21
+10090		2008-10-21
+10093		2008-10-21
+******** Query 1 ********
+First	Last	cnt
+Leigh	Hart	9
+******** Query 2 ********
+charge_id
+5000
+******** Query 3 ********
+first	last
+Sam	Phelps
+Dave	Caulk
+Tommy	Cat
+Tim	Simon
+Reed	Pints
+Nancy	Mansville
+Cart	Perry
+Penny	Statin
+Lee	Panner
+******** Query 4 ********
+criminal_id	last	first	cnt_sentence
+1030		Panner	Lee	2
+******** Query 5 ********
+precinct	charge_cnt
+WAVE		8
+******** Query 6 ********
+criminal_id	first	last		earliest_start_date	latest_end_date
+1020		Sam	Phelps		2008-09-14	2010-09-14
+1021		Tammy	Sums		2008-12-04	2009-06-04
+1022		Dave	Caulk		2009-03-19	2009-08-19
+1024		Cart	Perry		2008-12-19	2009-03-19
+1025		Tommy	Cat		2008-12-19	2009-03-19
+1026		Tim	Simon		2008-12-19	2009-03-19
+1027		Reed	Pints		2008-12-19	2009-03-19
+1028		Nancy	Mansville		2008-12-19	2009-03-19
+1029		Penny	Statin		2008-12-19	2009-02-04
+1030		Lee	Panner		2008-12-19	2009-07-05
+******** Query 7 ********
+Please enter the officer_id for the query:
+111115
+Officer 111115 has reported 9 crimes.

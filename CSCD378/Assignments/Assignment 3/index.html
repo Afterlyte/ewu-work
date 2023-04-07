@@ -1,0 +1,58 @@
+<!--
+    Ian Kaiserman
+    Assignment 3: Fun with Integers
+    The main index HTML file for displaying the main structure of the page and defining style rules
+-->
+
+<!DOCTYPE html>
+<head>
+    <title>Fun With Integers</title>
+    <style type="text/CSS">
+        form {
+            text-align: center;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+        h2 {
+            padding-left:25%;
+            padding-right:25%;
+        }
+        h1 {
+            border:3px solid #80002B;
+            text-align: center;
+        }
+        h1,h2,h3 {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        hr {
+            color:#80002B;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <hr>
+        <h1 style="border:none">Fun With Integers</h1>
+        <hr>
+        <h2 style="text-align: center">Welcome! Please type a number into the text box, select one or more options from the menu, and press Submit to generate those facts about your number!</h2>
+        <form method="post" action="menu.php">
+            <label for="usrnum">Type a 32-bit number here: </label><br />
+            <input type="text" id="usrnum" name="usernum"><br />
+            <input type="checkbox" id="names" name="menu[]" value="0">
+            <label for="names">Names</label><br />
+            <input type="checkbox" id="primes" name="menu[]" value="1">
+            <label for="primes">Prime Factors</label><br />
+            <input type="checkbox" id="divisors" name="menu[]" value="2">
+            <label for="divisors">Divisors</label><br />
+            <input type="checkbox" id="bases" name="menu[]" value="3">
+            <label for="bases">Base Equivalents</label><br />
+            <input type="checkbox" id="squares" name="menu[]" value="4">
+            <label for="squares">Squares and Roots</label><br />
+            <input type="checkbox" id="facts" name="menu[]" value="5">
+            <label for="facts">Fun Facts</label><br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>

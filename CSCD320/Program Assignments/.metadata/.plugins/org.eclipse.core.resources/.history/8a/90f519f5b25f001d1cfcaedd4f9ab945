@@ -1,0 +1,13 @@
+package prog3;
+
+import java.io.File;
+
+public class FastMatrixMulti {
+	
+	
+
+	public static void main(String[] args) {
+		File input = new File(args[0]);
+	}
+
+}

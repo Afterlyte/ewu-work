@@ -1,0 +1,9 @@
+Lab 1 Submission
+	1. List three different protocols that appear in the protocol column in the unfiltered packet-listing window. 
+		a.	ARP, MDNS, TLSv2
+	2. How long did it take from when the HTTP GET message was sent until the HTTP OK reply was received? (By default, the value of the Time column in the packet-listing window is the amount of time, in seconds, since Wireshark tracing began.  To display the Time field in time-of-day format, select the Wireshark View pull down menu, then select Time Display Format, then select Time-ofday.) 
+		a.	11 ms
+	3. Print the two HTTP messages (GET and OK) referred to in question 2 above. To do so, select Print from the Wireshark File command menu, select the “Selected Packet Only” and “Print as displayed” radial buttons, and then click OK. 
+		a.	See attached PDF
+	4. What is the Internet address of your computer?
+		a.	192.168.1.113

@@ -1,0 +1,5 @@
+To run the program:
+
+1. Open terminal in this location
+2. run "javac Main.java"
+3. run "java Main"

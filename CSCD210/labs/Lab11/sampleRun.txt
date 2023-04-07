@@ -1,0 +1,43 @@
+[Stuart Steiner, Tom Capaul, Dan Tappan, Paul Schimpf]
+ 
+Please choose from the following
+1) Sort and print the array
+2) Fill a new array
+3) Write the contents of the array to a file
+4) Quit
+Choice --> 1
+[Dan Tappan, Paul Schimpf, Stuart Steiner, Tom Capaul]
+
+Please choose from the following
+1) Sort and print the array
+2) Fill a new array
+3) Write the contents of the array to a file
+4) Quit
+Choice --> 2
+Please enter the name of the input file input2.txt
+[now, is, the, time, for, all, good, students, to, come, to, the, aid, of, their, university]
+ 
+Please choose from the following
+1) Sort and print the array
+2) Fill a new array
+3) Write the contents of the array to a file
+4) Quit
+Choice --> 1
+[aid, all, come, for, good, is, now, of, students, the, the, their, time, to, to, university]
+ 
+Please choose from the following
+1) Sort and print the array
+2) Fill a new array
+3) Write the contents of the array to a file
+4) Quit
+Choice --> 3
+
+Please enter the name of the output file output.txt
+Please choose from the following
+1) Sort and print the array
+2) Fill a new array
+3) Write the contents of the array to a file
+4) Quit
+Choice --> 4
+Ending Program
+ 

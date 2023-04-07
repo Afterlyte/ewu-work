@@ -1,0 +1,109 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{algpseudocode}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+ 
+\renewcommand\lstlistingname{Algorithm}
+\renewcommand\lstlistlistingname{Algorithms}
+\def\lstlistingautorefname{Alg.}
+
+\lstdefinestyle{Python}{
+    language        = Python,
+    frame           = lines, 
+    basicstyle      = \footnotesize,
+    keywordstyle    = \color{blue},
+    stringstyle     = \color{green},
+    commentstyle    = \color{red}\ttfamily
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% Edit these as appropriate
+\newcommand\course{CSCD 320}% <--- CLASS NAME
+\newcommand\prognumber{1}% <-- HOMEWORK NUMBER
+\newcommand\NetIDa{Your Name}% <--- YOUR NAME
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\NetIDa}
+\chead{\textbf{\Large Homework \prognumber}}
+\rhead{\course \\ \today}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+\newtheorem{corollary}{Corollary}
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+
+\section{Problem 1}
+
+\subsection{Explanation}
+
+This is an explanation.
+
+\subsection{Proof}
+
+$a \implies b$
+% The $ symbols are used to denote math mode. 
+% Use for any math you need to show.
+
+$$ a^2 + b^2 = c^2$$
+%Unless you want to showcase a formula.
+
+\subsection{Big-O Notation}
+
+$5000n^2 \in O(n^2)$
+
+$5000n^2 \in o(n^3)$
+
+$5000n^2 \in \Omega(n^2)$
+
+$5000n^2 \in \omega(n)$
+
+$5000n^2 \in \theta(n^2)$
+
+READ NEXT PAGE
+
+\pagebreak %Nice for not having work get cutoff mid page
+
+\subsection{Pseudocode}
+
+\textbf{fizzBuzz}$(i)$
+
+\textbf{Input}: A positive integer.
+
+\textbf{Output}: Prints 'fizz' if a number is divisible by 5, 'buzz' if divisible by 7, or 'fizzbuzz' if divisible by both.
+
+\begin{algorithmic}[1]
+    \If {i \% 5 == 0 \&\& i \% 7 == 0}
+        \State Print 'fizzbuzz'
+    \ElsIf {i \% 5 == 0}
+        \State Print 'fizz'
+    \ElsIf {i \% 7 == 0}
+        \State Print 'buzz'
+    \EndIf
+\end{algorithmic}
+
+Search LaTeX Algpseudocode to learn more about this library.
+
+\section{Problem 2}
+
+Here's another problem.
+
+\end{document}
